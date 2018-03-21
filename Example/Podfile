@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JWWaveView_Example' do
+  pod 'JWWaveView', :path => '../'
+
+  target 'JWWaveView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
