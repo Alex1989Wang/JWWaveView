@@ -39,8 +39,8 @@
     self.imageView.layer.masksToBounds = YES;
     
     //start wave animation
-    CGRect waveRect = (CGRect){0, CGRectGetMidY(avatarRect),
-        CGRectGetWidth(avatarRect), CGRectGetHeight(avatarRect) * 0.5};
+    CGRect waveRect = (CGRect){0, CGRectGetHeight(avatarRect) * 3/4,
+        CGRectGetWidth(avatarRect), CGRectGetHeight(avatarRect) * 1/4};
     self.waveView.frame = waveRect;
     [self.imageView addSubview:self.waveView];
     [self.waveView startWavingIfNeeded];
@@ -50,9 +50,10 @@
 - (void)resetWaveView {
     [self.waveView removeFromSuperview];
     
+    //1/4 height
     CGRect avatarRect = self.imageView.bounds;
-    CGRect waveRect = (CGRect){0, CGRectGetMidY(avatarRect),
-        CGRectGetWidth(avatarRect), CGRectGetHeight(avatarRect) * 0.5};
+    CGRect waveRect = (CGRect){0, CGRectGetHeight(avatarRect) * 3/4,
+        CGRectGetWidth(avatarRect), CGRectGetHeight(avatarRect) * 1/4};
     self.waveView.frame = waveRect;
     self.waveView.waveColor = [UIColor yellowColor];
     [self.imageView addSubview:self.waveView];

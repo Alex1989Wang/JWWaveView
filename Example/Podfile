@@ -2,9 +2,9 @@ use_frameworks!
 platform :ios, '8.0'
 
 target 'JWWaveView' do
-# pod 'JWWaveView', :path => '../'
+   pod 'JWWaveView', :path => '../'
 
-  pod 'JWWaveView'
+#  pod 'JWWaveView'
 
   target 'JWWaveViewTests' do
     inherit! :search_paths

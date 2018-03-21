@@ -11,7 +11,6 @@
 static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveTranslation";
 
 @interface JWWaveView ()
-@property (nonatomic, assign) CGFloat currentWaveShift;
 @property (nonatomic, strong) CAShapeLayer *waveShapeLayer;
 @property (nonatomic, assign) CFTimeInterval timeOffset;
 @end
@@ -51,10 +50,17 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
     self.waveShapeLayer.strokeColor = waveColor.CGColor;
 }
 
+- (void)setWaveCycles:(NSInteger)waveCycles {
+    if (_waveCycles != waveCycles) {
+        _waveCycles = waveCycles;
+    }
+}
+
 #pragma mark - Initialization
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
+        [self configureIntialSetup];
         [self configureWaveShapes];
     }
     return self;
@@ -63,9 +69,17 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
+        [self configureIntialSetup];
         [self configureWaveShapes];
     }
     return self;
+}
+
+- (void)configureIntialSetup {
+    //do not allow shape layers to move outside of view's bounds rectangle.
+    self.clipsToBounds = YES;
+    _waveColor = [UIColor blueColor];
+    _waveCycles = 1;
 }
 
 #pragma mark - Override
@@ -81,7 +95,6 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
     if (!newSuperview) {
         [self pauseWavingIfNeeded];
     }
-    
     [super willMoveToSuperview:newSuperview];
 }
 
@@ -142,7 +155,9 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
     sinPath.lineWidth = 1.f;
     CGFloat yPos = 0;
     for (CGFloat xPos = 0.f; xPos <= canvasWidth; xPos += 1.f) {
-        yPos = canvasMidY + sin((xPos)/canvasWidth * M_PI * 2) * canvasHeight / 8; //one-eighth
+        //wave path starts at the canvasMidY and uses (canvasHeight * 0.5) as amplitude
+        CGFloat halfAmplitude = canvasHeight / 4.f;
+        yPos = canvasMidY + sin((xPos)/canvasWidth * M_PI * 2 * _waveCycles) * halfAmplitude;
         if (fpclassify(xPos) == FP_ZERO) {
             [sinPath moveToPoint:(CGPoint){xPos, yPos}];
         }
@@ -157,6 +172,16 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
     [sinPath closePath];
     self.waveShapeLayer.path = sinPath.CGPath;
     [CATransaction commit];
+}
+
+#pragma mark - Lazy Loading 
+- (CAShapeLayer *)waveShapeLayer {
+    if (!_waveShapeLayer) {
+        _waveShapeLayer = [CAShapeLayer layer];
+        _waveShapeLayer.strokeColor = _waveColor.CGColor;
+        _waveShapeLayer.fillColor = _waveColor.CGColor;
+    }
+    return _waveShapeLayer;
 }
 
 @end

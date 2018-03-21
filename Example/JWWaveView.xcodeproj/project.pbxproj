@@ -19,6 +19,8 @@
 		C2318FEB206249EC00EF0C07 /* JWWaveTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FE7206249EC00EF0C07 /* JWWaveTableCell.m */; };
 		C2318FEC206249EC00EF0C07 /* JWWaveInCellTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FE8206249EC00EF0C07 /* JWWaveInCellTestViewController.m */; };
 		C2318FEE206253B700EF0C07 /* JWWaveView-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2318FED206253B700EF0C07 /* JWWaveView-Info.plist */; };
+		C2318FF02062998E00EF0C07 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2318FEF2062998E00EF0C07 /* Storyboard.storyboard */; };
+		C2E4DD55206299340018B969 /* JWMultiCylceWaveTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E4DD54206299340018B969 /* JWMultiCylceWaveTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		C2318FE9206249EC00EF0C07 /* JWWaveTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWWaveTableCell.h; sourceTree = "<group>"; };
 		C2318FEA206249EC00EF0C07 /* JWWaveInCellTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWWaveInCellTestViewController.h; sourceTree = "<group>"; };
 		C2318FED206253B700EF0C07 /* JWWaveView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JWWaveView-Info.plist"; sourceTree = "<group>"; };
+		C2318FEF2062998E00EF0C07 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		C2E4DD53206299340018B969 /* JWMultiCylceWaveTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWMultiCylceWaveTestViewController.h; sourceTree = "<group>"; };
+		C2E4DD54206299340018B969 /* JWMultiCylceWaveTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWMultiCylceWaveTestViewController.m; sourceTree = "<group>"; };
 		C67C40C6D025599D9CA2ADE1 /* Pods-JWWaveView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWWaveView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWWaveView/Pods-JWWaveView.debug.xcconfig"; sourceTree = "<group>"; };
 		E25F12FA8F3954C416AC3CFC /* Pods_JWWaveViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWWaveViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -172,6 +177,7 @@
 				C2318FD4206247BD00EF0C07 /* JWMainTableViewController.h */,
 				C2318FD5206247BD00EF0C07 /* JWMainTableViewController.m */,
 				C2318FE6206249EC00EF0C07 /* WaveViewInCells */,
+				C2E4DD52206299180018B969 /* MultiCycles */,
 			);
 			path = TestExamples;
 			sourceTree = "<group>";
@@ -185,6 +191,16 @@
 				C2318FE8206249EC00EF0C07 /* JWWaveInCellTestViewController.m */,
 			);
 			path = WaveViewInCells;
+			sourceTree = "<group>";
+		};
+		C2E4DD52206299180018B969 /* MultiCycles */ = {
+			isa = PBXGroup;
+			children = (
+				C2E4DD53206299340018B969 /* JWMultiCylceWaveTestViewController.h */,
+				C2E4DD54206299340018B969 /* JWMultiCylceWaveTestViewController.m */,
+				C2318FEF2062998E00EF0C07 /* Storyboard.storyboard */,
+			);
+			path = MultiCycles;
 			sourceTree = "<group>";
 		};
 		C6F4CCDF65D541ABE241B75B /* Frameworks */ = {
@@ -313,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2318FB0206245E800EF0C07 /* LaunchScreen.storyboard in Resources */,
+				C2318FF02062998E00EF0C07 /* Storyboard.storyboard in Resources */,
 				C2318FEE206253B700EF0C07 /* JWWaveView-Info.plist in Resources */,
 				C2318FAD206245E800EF0C07 /* Assets.xcassets in Resources */,
 			);
@@ -442,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2318FEC206249EC00EF0C07 /* JWWaveInCellTestViewController.m in Sources */,
+				C2E4DD55206299340018B969 /* JWMultiCylceWaveTestViewController.m in Sources */,
 				C2318FA5206245E800EF0C07 /* JWAppDelegate.m in Sources */,
 				C2318FD6206247BD00EF0C07 /* JWMainTableViewController.m in Sources */,
 				C2318FA2206245E800EF0C07 /* main.m in Sources */,

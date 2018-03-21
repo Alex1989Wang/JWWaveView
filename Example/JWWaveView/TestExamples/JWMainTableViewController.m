@@ -8,8 +8,10 @@
 
 #import "JWMainTableViewController.h"
 #import "JWWaveInCellTestViewController.h"
+#import "JWMultiCylceWaveTestViewController.h"
 
 typedef NS_ENUM(NSUInteger, JWWaveViewTestType) {
+    JWWaveViewTestTypeMultiCycle,
     JWWaveViewTestTypeInCell,
 };
 
@@ -58,10 +60,19 @@ static NSString *JWMainTableViewCellReuseID = @"JWMainTableViewCellReuseID";
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.row) {
+        case JWWaveViewTestTypeMultiCycle: {
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+            JWMultiCylceWaveTestViewController *testCon =
+            [storyboard instantiateViewControllerWithIdentifier:@"JWMultiCylceWaveTestViewController"];
+            testCon.title = self.testTypesMap[@(indexPath.row)];
+            [self.navigationController pushViewController:testCon animated:YES];
+            break;
+        }
         case JWWaveViewTestTypeInCell: {
             //put wave view in table cells 
             JWWaveInCellTestViewController *testCon =
             [[JWWaveInCellTestViewController alloc] init];
+            testCon.title = self.testTypesMap[@(indexPath.row)];
             [self.navigationController pushViewController:testCon animated:YES];
             break;
         }
@@ -73,7 +84,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 #pragma mark - Lazy Loading
 - (NSDictionary *)testTypesMap {
     if (nil == _testTypesMap) {
-        _testTypesMap = @{@(JWWaveViewTestTypeInCell) : @"Wave View In Table Cells",};
+        _testTypesMap = @{@(JWWaveViewTestTypeInCell) : @"Wave View In Table Cells",
+                          @(JWWaveViewTestTypeMultiCycle) : @"Multiple Wave Cycles",};
     }
     return _testTypesMap;
 }

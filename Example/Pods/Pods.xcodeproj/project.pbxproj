@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		063DCD1ADE8A7F55839D8DD5A8D8AE1D /* JWWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144ECD54169693C5051833DFCBE42038 /* JWWaveView.m */; };
-		2CCDC622F35C4730EEBBA9E5B342DA12 /* JWWaveView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FB878BB268EECFAB7FC15EA6A71BBFF /* JWWaveView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		063DCD1ADE8A7F55839D8DD5A8D8AE1D /* JWWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA425E31F53D4FDB6262FDC631AF5160 /* JWWaveView.m */; };
+		2CCDC622F35C4730EEBBA9E5B342DA12 /* JWWaveView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE993A53AEA69AAB7730DBB20F313B6 /* JWWaveView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EA256381038CFE40523B11B91414C4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		361D6D37F36482191390BDB3FC63DE27 /* Pods-JWWaveViewTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E9C0D1EB95F28080DF034B1CBB5990 /* Pods-JWWaveViewTests-dummy.m */; };
 		4077DCF40919CD72463AC0EE95353F48 /* Pods-JWWaveViewTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 072C05D387DB54292AE2965ED1CF0791 /* Pods-JWWaveViewTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,8 +16,8 @@
 		99BD1894600EFAD1BB7A1BE82E5FBD33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		B3285776927E7E2DF7338AEAC6810F1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		D4B81633B610ECD74A8356BFC38A4545 /* Pods-JWWaveView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE43F30373AB93988A2188F6009C2EB /* Pods-JWWaveView-dummy.m */; };
-		E039F3830C4DA4974CB54061B8394471 /* JWWaveView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D417B864B654ECBC70FC671407EF46C /* JWWaveView-dummy.m */; };
-		F659E52000B4F473993CF25371AF1939 /* JWWaveView.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D04E3F66180983D7EE08A8C4D05E7B /* JWWaveView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E039F3830C4DA4974CB54061B8394471 /* JWWaveView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475815952A6BE30C798A8CD175F85B3 /* JWWaveView-dummy.m */; };
+		F659E52000B4F473993CF25371AF1939 /* JWWaveView.h in Headers */ = {isa = PBXBuildFile; fileRef = C0A6A9B3BF54E9CBC6CB82C8B244C0F5 /* JWWaveView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,26 +36,26 @@
 		094CD9BFDB5CA0C241C5071B510D1BEF /* Pods_JWWaveView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JWWaveView.framework; path = "Pods-JWWaveView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1106DA2767E78E97BB604C3AAB402EC9 /* Pods-JWWaveView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JWWaveView-umbrella.h"; sourceTree = "<group>"; };
 		11E591D701985B0CF7D2E895A4CCC767 /* Pods-JWWaveViewTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JWWaveViewTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		144ECD54169693C5051833DFCBE42038 /* JWWaveView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWWaveView.m; path = JWWaveView/Classes/JWWaveView.m; sourceTree = "<group>"; };
-		1D417B864B654ECBC70FC671407EF46C /* JWWaveView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JWWaveView-dummy.m"; sourceTree = "<group>"; };
 		2C7E8AACF6FBAF2421E803F3500C190E /* Pods-JWWaveView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWWaveView.debug.xcconfig"; sourceTree = "<group>"; };
 		2CE43F30373AB93988A2188F6009C2EB /* Pods-JWWaveView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JWWaveView-dummy.m"; sourceTree = "<group>"; };
-		3315DC67EFC1E8258B17C10636FA39FD /* JWWaveView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JWWaveView.xcconfig; sourceTree = "<group>"; };
+		4DE993A53AEA69AAB7730DBB20F313B6 /* JWWaveView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWWaveView-umbrella.h"; sourceTree = "<group>"; };
 		4E1D7B3E11A7DF95E5699F447FBF23A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6058E931292CDC2760335F9AB203BD86 /* JWWaveView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWWaveView-prefix.pch"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6ACFFD54384422F0869D2EF71CA9582E /* Pods-JWWaveViewTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-JWWaveViewTests.modulemap"; sourceTree = "<group>"; };
 		6C3F56E22E80177E14F5387EE14F4FAC /* Pods-JWWaveView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-JWWaveView.modulemap"; sourceTree = "<group>"; };
 		6CA4F9FBEB8770924C82D851F0C68B10 /* Pods-JWWaveView-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JWWaveView-frameworks.sh"; sourceTree = "<group>"; };
-		7FA9E4F471F915524E6ACE240694FC08 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7FB878BB268EECFAB7FC15EA6A71BBFF /* JWWaveView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWWaveView-umbrella.h"; sourceTree = "<group>"; };
+		731BA742C365A3597D5F5724E2D66FDA /* JWWaveView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JWWaveView.modulemap; sourceTree = "<group>"; };
+		8475815952A6BE30C798A8CD175F85B3 /* JWWaveView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JWWaveView-dummy.m"; sourceTree = "<group>"; };
+		8625C098B1BC7F94BECD2044437BFA65 /* JWWaveView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JWWaveView.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9CBA4F70B4503BFD3DD913E7D96CAC18 /* JWWaveView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JWWaveView.modulemap; sourceTree = "<group>"; };
-		A2D04E3F66180983D7EE08A8C4D05E7B /* JWWaveView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWWaveView.h; path = JWWaveView/Classes/JWWaveView.h; sourceTree = "<group>"; };
+		94FE57EAC9DAC1EF19F17BF408FD2710 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6FF7D27FF93A3FE73ECDDB0A915B4E2 /* Pods_JWWaveViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JWWaveViewTests.framework; path = "Pods-JWWaveViewTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC12A8C0902BB344248E3B1715C8801 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0A6A9B3BF54E9CBC6CB82C8B244C0F5 /* JWWaveView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWWaveView.h; path = JWWaveView/Classes/JWWaveView.h; sourceTree = "<group>"; };
 		C23B882893176213B30F6703FF5D4FD6 /* Pods-JWWaveViewTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JWWaveViewTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C41975BC43CAC27B412C19A88EC038DF /* Pods-JWWaveView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JWWaveView-resources.sh"; sourceTree = "<group>"; };
-		C934ED9CC6C342554CC5830B16FF03C9 /* JWWaveView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWWaveView-prefix.pch"; sourceTree = "<group>"; };
+		CA425E31F53D4FDB6262FDC631AF5160 /* JWWaveView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWWaveView.m; path = JWWaveView/Classes/JWWaveView.m; sourceTree = "<group>"; };
 		D66E13B20D0FEAA891C0B1AE1FCF5A0C /* Pods-JWWaveViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWWaveViewTests.release.xcconfig"; sourceTree = "<group>"; };
 		DDE2D616DA9BE778B1A8DF6D50D94222 /* Pods-JWWaveViewTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JWWaveViewTests-frameworks.sh"; sourceTree = "<group>"; };
 		E2E9C0D1EB95F28080DF034B1CBB5990 /* Pods-JWWaveViewTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JWWaveViewTests-dummy.m"; sourceTree = "<group>"; };
@@ -94,6 +94,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06C6E21FC7AA0DBB7DC6F29DE0CD95FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				94FE57EAC9DAC1EF19F17BF408FD2710 /* Info.plist */,
+				731BA742C365A3597D5F5724E2D66FDA /* JWWaveView.modulemap */,
+				8625C098B1BC7F94BECD2044437BFA65 /* JWWaveView.xcconfig */,
+				8475815952A6BE30C798A8CD175F85B3 /* JWWaveView-dummy.m */,
+				6058E931292CDC2760335F9AB203BD86 /* JWWaveView-prefix.pch */,
+				4DE993A53AEA69AAB7730DBB20F313B6 /* JWWaveView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JWWaveView";
+			sourceTree = "<group>";
+		};
 		3CA8CAB11A559C1B7908FCFB469AD6FB /* Pods-JWWaveViewTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,48 +135,23 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5D4AFB0E6893ECFE5B9C76D5B644DD76 /* JWWaveView */ = {
-			isa = PBXGroup;
-			children = (
-				A2D04E3F66180983D7EE08A8C4D05E7B /* JWWaveView.h */,
-				144ECD54169693C5051833DFCBE42038 /* JWWaveView.m */,
-				76A54C91FE875D22DE3FAE78E372D1D6 /* Support Files */,
-			);
-			name = JWWaveView;
-			path = JWWaveView;
-			sourceTree = "<group>";
-		};
-		76A54C91FE875D22DE3FAE78E372D1D6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7FA9E4F471F915524E6ACE240694FC08 /* Info.plist */,
-				9CBA4F70B4503BFD3DD913E7D96CAC18 /* JWWaveView.modulemap */,
-				3315DC67EFC1E8258B17C10636FA39FD /* JWWaveView.xcconfig */,
-				1D417B864B654ECBC70FC671407EF46C /* JWWaveView-dummy.m */,
-				C934ED9CC6C342554CC5830B16FF03C9 /* JWWaveView-prefix.pch */,
-				7FB878BB268EECFAB7FC15EA6A71BBFF /* JWWaveView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/JWWaveView";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				B0E62FDCA201BC038C3D4AC2C0F2AC18 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				9A3048107A761AAD2FD324ECE53660FB /* Pods */,
 				BB7CE4D0B606559009C84CE2A60AF506 /* Products */,
 				423226D67D5014D65990B8EC7D29253D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9A3048107A761AAD2FD324ECE53660FB /* Pods */ = {
+		B0E62FDCA201BC038C3D4AC2C0F2AC18 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5D4AFB0E6893ECFE5B9C76D5B644DD76 /* JWWaveView */,
+				CE4AB951D17DD338827CA42763920316 /* JWWaveView */,
 			);
-			name = Pods;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		BB7CE4D0B606559009C84CE2A60AF506 /* Products */ = {
@@ -181,6 +170,17 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE4AB951D17DD338827CA42763920316 /* JWWaveView */ = {
+			isa = PBXGroup;
+			children = (
+				C0A6A9B3BF54E9CBC6CB82C8B244C0F5 /* JWWaveView.h */,
+				CA425E31F53D4FDB6262FDC631AF5160 /* JWWaveView.m */,
+				06C6E21FC7AA0DBB7DC6F29DE0CD95FC /* Support Files */,
+			);
+			name = JWWaveView;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -360,7 +360,7 @@
 /* Begin XCBuildConfiguration section */
 		097E9B360D86279D5F75249E24B5488A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3315DC67EFC1E8258B17C10636FA39FD /* JWWaveView.xcconfig */;
+			baseConfigurationReference = 8625C098B1BC7F94BECD2044437BFA65 /* JWWaveView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -558,7 +558,7 @@
 		};
 		74619251728F67204EB0B3BAFE3C70AF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3315DC67EFC1E8258B17C10636FA39FD /* JWWaveView.xcconfig */;
+			baseConfigurationReference = 8625C098B1BC7F94BECD2044437BFA65 /* JWWaveView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
