@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_JWWaveView_ExampleVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_JWWaveView_ExampleVersionString[];
+FOUNDATION_EXPORT double Pods_JWWaveViewTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_JWWaveViewTestsVersionString[];
 

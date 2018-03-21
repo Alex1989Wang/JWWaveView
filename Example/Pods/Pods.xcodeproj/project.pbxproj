@@ -7,179 +7,161 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04F3D0E136B7FE7459D3E7DA59FAA058 /* JWWaveView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 785380319347B99344993DA4FA81B462 /* JWWaveView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C4678440D7B7D356693FB45F405529A /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC609C8909AEF500DFDE7B44546ACD7 /* ReplaceMe.m */; };
-		58190CDD9CD288B41E0E1564B977BC14 /* Pods-JWWaveView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ABF1AB4C71303AAE921C6A4AD1D9BC8 /* Pods-JWWaveView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		58A1BD69A2E125E42EA96EB74EFF632B /* Pods-JWWaveView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB78A3E609969B10319C991DBE4CC93 /* Pods-JWWaveView_Tests-dummy.m */; };
-		62EFBE62955DF99C8812086E2E38504D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		6E1EBAF741A5E33008FABBD701217EDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		F27C1AF5CE35B414E31CD61F47DF8EA6 /* Pods-JWWaveView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 397CB3C8C1144E5488FDFDD3FCAAAA71 /* Pods-JWWaveView_Example-dummy.m */; };
-		FB0AFA9D6E2A0BE9E28347E7ECFD5B58 /* JWWaveView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA5C93A09EAA19D87253739638EB4F2 /* JWWaveView-dummy.m */; };
-		FBE1427198E8A58019E5B902594EF043 /* Pods-JWWaveView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC269960CFCB6E7A72545079ECF6815A /* Pods-JWWaveView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD190872B7D8B0B623F826AC19F3DC38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		063DCD1ADE8A7F55839D8DD5A8D8AE1D /* JWWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA425E31F53D4FDB6262FDC631AF5160 /* JWWaveView.m */; };
+		2CCDC622F35C4730EEBBA9E5B342DA12 /* JWWaveView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE993A53AEA69AAB7730DBB20F313B6 /* JWWaveView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EA256381038CFE40523B11B91414C4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		361D6D37F36482191390BDB3FC63DE27 /* Pods-JWWaveViewTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E9C0D1EB95F28080DF034B1CBB5990 /* Pods-JWWaveViewTests-dummy.m */; };
+		4077DCF40919CD72463AC0EE95353F48 /* Pods-JWWaveViewTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 072C05D387DB54292AE2965ED1CF0791 /* Pods-JWWaveViewTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A49E3CB49609D250CAD2D8BCF0E6635 /* Pods-JWWaveView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1106DA2767E78E97BB604C3AAB402EC9 /* Pods-JWWaveView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99BD1894600EFAD1BB7A1BE82E5FBD33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B3285776927E7E2DF7338AEAC6810F1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D4B81633B610ECD74A8356BFC38A4545 /* Pods-JWWaveView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE43F30373AB93988A2188F6009C2EB /* Pods-JWWaveView-dummy.m */; };
+		E039F3830C4DA4974CB54061B8394471 /* JWWaveView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475815952A6BE30C798A8CD175F85B3 /* JWWaveView-dummy.m */; };
+		F659E52000B4F473993CF25371AF1939 /* JWWaveView.h in Headers */ = {isa = PBXBuildFile; fileRef = C0A6A9B3BF54E9CBC6CB82C8B244C0F5 /* JWWaveView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7330A859394EEB0668D780758BDF0164 /* PBXContainerItemProxy */ = {
+		DE0016DD6D00DDD999FBCBA1149C42C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 27E7AB6F5B4993CB94F59222C3E0E223;
+			remoteGlobalIDString = 89F89EDB85745C104E6C439ADC83BD14;
 			remoteInfo = JWWaveView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08C9862ACCB4F3FCA33AFC333AA13C9A /* Pods_JWWaveView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JWWaveView_Example.framework; path = "Pods-JWWaveView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		095DD9CF8A063E3FDCC96986586E5545 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		173AA9FEDD00FB6124159F14BE8909B0 /* Pods-JWWaveView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JWWaveView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2D80AF223557C3FCA87755C0E805B240 /* Pods-JWWaveView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWWaveView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		397CB3C8C1144E5488FDFDD3FCAAAA71 /* Pods-JWWaveView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JWWaveView_Example-dummy.m"; sourceTree = "<group>"; };
-		3B0CC66E0C2CA440590164F1FDEC644B /* Pods-JWWaveView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JWWaveView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3E2F6A47D9C456AD53D91538DCE79D48 /* Pods_JWWaveView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JWWaveView_Tests.framework; path = "Pods-JWWaveView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		42B2C5A2955E6522B29D97782375F345 /* Pods-JWWaveView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWWaveView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4ABF1AB4C71303AAE921C6A4AD1D9BC8 /* Pods-JWWaveView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JWWaveView_Example-umbrella.h"; sourceTree = "<group>"; };
-		506F49C6F21D506B871146EEC60DC2F3 /* Pods-JWWaveView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-JWWaveView_Example.modulemap"; sourceTree = "<group>"; };
-		5CEF0578EEAB57031673D991CF6370CC /* Pods-JWWaveView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWWaveView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		04696E08BC3F2A42DDEE45DEB82D2D1F /* Pods-JWWaveView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWWaveView.release.xcconfig"; sourceTree = "<group>"; };
+		072C05D387DB54292AE2965ED1CF0791 /* Pods-JWWaveViewTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JWWaveViewTests-umbrella.h"; sourceTree = "<group>"; };
+		094CD9BFDB5CA0C241C5071B510D1BEF /* Pods_JWWaveView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JWWaveView.framework; path = "Pods-JWWaveView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1106DA2767E78E97BB604C3AAB402EC9 /* Pods-JWWaveView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JWWaveView-umbrella.h"; sourceTree = "<group>"; };
+		11E591D701985B0CF7D2E895A4CCC767 /* Pods-JWWaveViewTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JWWaveViewTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2C7E8AACF6FBAF2421E803F3500C190E /* Pods-JWWaveView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWWaveView.debug.xcconfig"; sourceTree = "<group>"; };
+		2CE43F30373AB93988A2188F6009C2EB /* Pods-JWWaveView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JWWaveView-dummy.m"; sourceTree = "<group>"; };
+		4DE993A53AEA69AAB7730DBB20F313B6 /* JWWaveView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWWaveView-umbrella.h"; sourceTree = "<group>"; };
+		4E1D7B3E11A7DF95E5699F447FBF23A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6058E931292CDC2760335F9AB203BD86 /* JWWaveView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWWaveView-prefix.pch"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6A2C4305B430E6E35129B5486A458F9D /* Pods-JWWaveView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JWWaveView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		6D040F01F3E61AE1933BF1B3F9ED0AEC /* Pods-JWWaveView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWWaveView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		785380319347B99344993DA4FA81B462 /* JWWaveView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWWaveView-umbrella.h"; sourceTree = "<group>"; };
-		7A7E517EE2DBD8ABFFC0DC30F9E76138 /* Pods-JWWaveView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-JWWaveView_Tests.modulemap"; sourceTree = "<group>"; };
-		84F6D172651E4B1CA890C02592B9CDFC /* JWWaveView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JWWaveView.framework; path = JWWaveView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ACFFD54384422F0869D2EF71CA9582E /* Pods-JWWaveViewTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-JWWaveViewTests.modulemap"; sourceTree = "<group>"; };
+		6C3F56E22E80177E14F5387EE14F4FAC /* Pods-JWWaveView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-JWWaveView.modulemap"; sourceTree = "<group>"; };
+		6CA4F9FBEB8770924C82D851F0C68B10 /* Pods-JWWaveView-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JWWaveView-frameworks.sh"; sourceTree = "<group>"; };
+		731BA742C365A3597D5F5724E2D66FDA /* JWWaveView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JWWaveView.modulemap; sourceTree = "<group>"; };
+		8475815952A6BE30C798A8CD175F85B3 /* JWWaveView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JWWaveView-dummy.m"; sourceTree = "<group>"; };
+		8625C098B1BC7F94BECD2044437BFA65 /* JWWaveView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JWWaveView.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94C4891BABF281E7A36A482D5E7E5AAB /* Pods-JWWaveView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JWWaveView_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		A1282931C2685029DCBECBD65C423B98 /* Pods-JWWaveView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JWWaveView_Tests-resources.sh"; sourceTree = "<group>"; };
-		A85B70D05252FA10C1A5DA88B5F20D8C /* Pods-JWWaveView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JWWaveView_Example-resources.sh"; sourceTree = "<group>"; };
-		AA34473E61A7B2B61D39A721D049DD26 /* JWWaveView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JWWaveView.xcconfig; sourceTree = "<group>"; };
-		AC269960CFCB6E7A72545079ECF6815A /* Pods-JWWaveView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JWWaveView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		BDA5C93A09EAA19D87253739638EB4F2 /* JWWaveView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JWWaveView-dummy.m"; sourceTree = "<group>"; };
-		C73355DC35C73B0F340BC0723C138DA8 /* Pods-JWWaveView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JWWaveView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		D4B4F29500DCB4B0BEB6A1B8750E704F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6550261F79696C7D6C75F7E86807B50 /* Pods-JWWaveView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JWWaveView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DC25C4FA762BAD06597F1944734D7442 /* JWWaveView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JWWaveView.modulemap; sourceTree = "<group>"; };
-		E59DA5F43402C135C4B788AA8BC3469A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EAF26D6CE6443CB990E1FAA4ED8BDD66 /* JWWaveView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWWaveView-prefix.pch"; sourceTree = "<group>"; };
-		FFB78A3E609969B10319C991DBE4CC93 /* Pods-JWWaveView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JWWaveView_Tests-dummy.m"; sourceTree = "<group>"; };
-		FFC609C8909AEF500DFDE7B44546ACD7 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = JWWaveView/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		94FE57EAC9DAC1EF19F17BF408FD2710 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6FF7D27FF93A3FE73ECDDB0A915B4E2 /* Pods_JWWaveViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JWWaveViewTests.framework; path = "Pods-JWWaveViewTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC12A8C0902BB344248E3B1715C8801 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0A6A9B3BF54E9CBC6CB82C8B244C0F5 /* JWWaveView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWWaveView.h; path = JWWaveView/Classes/JWWaveView.h; sourceTree = "<group>"; };
+		C23B882893176213B30F6703FF5D4FD6 /* Pods-JWWaveViewTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JWWaveViewTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C41975BC43CAC27B412C19A88EC038DF /* Pods-JWWaveView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JWWaveView-resources.sh"; sourceTree = "<group>"; };
+		CA425E31F53D4FDB6262FDC631AF5160 /* JWWaveView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWWaveView.m; path = JWWaveView/Classes/JWWaveView.m; sourceTree = "<group>"; };
+		D66E13B20D0FEAA891C0B1AE1FCF5A0C /* Pods-JWWaveViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWWaveViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		DDE2D616DA9BE778B1A8DF6D50D94222 /* Pods-JWWaveViewTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JWWaveViewTests-frameworks.sh"; sourceTree = "<group>"; };
+		E2E9C0D1EB95F28080DF034B1CBB5990 /* Pods-JWWaveViewTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JWWaveViewTests-dummy.m"; sourceTree = "<group>"; };
+		E3AD1858CF50EE61723FC19A547BDD57 /* Pods-JWWaveView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JWWaveView-acknowledgements.plist"; sourceTree = "<group>"; };
+		E3AD4F6184FEFF5E5C578AC524FD126B /* JWWaveView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JWWaveView.framework; path = JWWaveView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AA77C2475410428471F9DD8A0599ED /* Pods-JWWaveViewTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JWWaveViewTests-resources.sh"; sourceTree = "<group>"; };
+		EE06D69ABA5DE1B739DD818FD7169A8F /* Pods-JWWaveView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JWWaveView-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F720C4039416171AE08698FC00E7E28A /* Pods-JWWaveViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWWaveViewTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		59C54163A2B69FDA05B1AA983CE7D7CB /* Frameworks */ = {
+		4DCF909008D717A40E571D96EB880D2C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD190872B7D8B0B623F826AC19F3DC38 /* Foundation.framework in Frameworks */,
+				99BD1894600EFAD1BB7A1BE82E5FBD33 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		632F7B070E7CA971576ECF8880C1C1C5 /* Frameworks */ = {
+		CDE627871890765076DEF954245C0E7C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E1EBAF741A5E33008FABBD701217EDE /* Foundation.framework in Frameworks */,
+				2EA256381038CFE40523B11B91414C4B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5371A1AD7B9CFEA5AA100EA94C9C244 /* Frameworks */ = {
+		E0C6C2343639B46B9330A7010F3C71AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62EFBE62955DF99C8812086E2E38504D /* Foundation.framework in Frameworks */,
+				B3285776927E7E2DF7338AEAC6810F1D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E64E651B0210249679BDE214BC39C16 /* Targets Support Files */ = {
+		06C6E21FC7AA0DBB7DC6F29DE0CD95FC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B27DFF7CB6C00503CB6367D1C668A6DB /* Pods-JWWaveView_Example */,
-				8C439207BB816EA0F22CFA0CB09BDA6F /* Pods-JWWaveView_Tests */,
+				94FE57EAC9DAC1EF19F17BF408FD2710 /* Info.plist */,
+				731BA742C365A3597D5F5724E2D66FDA /* JWWaveView.modulemap */,
+				8625C098B1BC7F94BECD2044437BFA65 /* JWWaveView.xcconfig */,
+				8475815952A6BE30C798A8CD175F85B3 /* JWWaveView-dummy.m */,
+				6058E931292CDC2760335F9AB203BD86 /* JWWaveView-prefix.pch */,
+				4DE993A53AEA69AAB7730DBB20F313B6 /* JWWaveView-umbrella.h */,
 			);
-			name = "Targets Support Files";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JWWaveView";
 			sourceTree = "<group>";
 		};
-		7016D0C048F5D9FEB5C7F7CB00616B29 /* JWWaveView */ = {
+		3CA8CAB11A559C1B7908FCFB469AD6FB /* Pods-JWWaveViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				FFC609C8909AEF500DFDE7B44546ACD7 /* ReplaceMe.m */,
-				A9796A022A199AF61CA077BDD99F3215 /* Support Files */,
+				ACC12A8C0902BB344248E3B1715C8801 /* Info.plist */,
+				6ACFFD54384422F0869D2EF71CA9582E /* Pods-JWWaveViewTests.modulemap */,
+				11E591D701985B0CF7D2E895A4CCC767 /* Pods-JWWaveViewTests-acknowledgements.markdown */,
+				C23B882893176213B30F6703FF5D4FD6 /* Pods-JWWaveViewTests-acknowledgements.plist */,
+				E2E9C0D1EB95F28080DF034B1CBB5990 /* Pods-JWWaveViewTests-dummy.m */,
+				DDE2D616DA9BE778B1A8DF6D50D94222 /* Pods-JWWaveViewTests-frameworks.sh */,
+				E5AA77C2475410428471F9DD8A0599ED /* Pods-JWWaveViewTests-resources.sh */,
+				072C05D387DB54292AE2965ED1CF0791 /* Pods-JWWaveViewTests-umbrella.h */,
+				F720C4039416171AE08698FC00E7E28A /* Pods-JWWaveViewTests.debug.xcconfig */,
+				D66E13B20D0FEAA891C0B1AE1FCF5A0C /* Pods-JWWaveViewTests.release.xcconfig */,
 			);
-			name = JWWaveView;
-			path = ../..;
+			name = "Pods-JWWaveViewTests";
+			path = "Target Support Files/Pods-JWWaveViewTests";
+			sourceTree = "<group>";
+		};
+		423226D67D5014D65990B8EC7D29253D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7E0AD8A3C75AEF17D9765DBF13C1924 /* Pods-JWWaveView */,
+				3CA8CAB11A559C1B7908FCFB469AD6FB /* Pods-JWWaveViewTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				F0FAA6AC3D3C35135E785CDFF306087A /* Development Pods */,
+				B0E62FDCA201BC038C3D4AC2C0F2AC18 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				8BD2058BADE96B33CC7064FA0ADE6572 /* Products */,
-				1E64E651B0210249679BDE214BC39C16 /* Targets Support Files */,
+				BB7CE4D0B606559009C84CE2A60AF506 /* Products */,
+				423226D67D5014D65990B8EC7D29253D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8BD2058BADE96B33CC7064FA0ADE6572 /* Products */ = {
+		B0E62FDCA201BC038C3D4AC2C0F2AC18 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				84F6D172651E4B1CA890C02592B9CDFC /* JWWaveView.framework */,
-				08C9862ACCB4F3FCA33AFC333AA13C9A /* Pods_JWWaveView_Example.framework */,
-				3E2F6A47D9C456AD53D91538DCE79D48 /* Pods_JWWaveView_Tests.framework */,
+				CE4AB951D17DD338827CA42763920316 /* JWWaveView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BB7CE4D0B606559009C84CE2A60AF506 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3AD4F6184FEFF5E5C578AC524FD126B /* JWWaveView.framework */,
+				094CD9BFDB5CA0C241C5071B510D1BEF /* Pods_JWWaveView.framework */,
+				A6FF7D27FF93A3FE73ECDDB0A915B4E2 /* Pods_JWWaveViewTests.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8C439207BB816EA0F22CFA0CB09BDA6F /* Pods-JWWaveView_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				095DD9CF8A063E3FDCC96986586E5545 /* Info.plist */,
-				7A7E517EE2DBD8ABFFC0DC30F9E76138 /* Pods-JWWaveView_Tests.modulemap */,
-				3B0CC66E0C2CA440590164F1FDEC644B /* Pods-JWWaveView_Tests-acknowledgements.markdown */,
-				173AA9FEDD00FB6124159F14BE8909B0 /* Pods-JWWaveView_Tests-acknowledgements.plist */,
-				FFB78A3E609969B10319C991DBE4CC93 /* Pods-JWWaveView_Tests-dummy.m */,
-				94C4891BABF281E7A36A482D5E7E5AAB /* Pods-JWWaveView_Tests-frameworks.sh */,
-				A1282931C2685029DCBECBD65C423B98 /* Pods-JWWaveView_Tests-resources.sh */,
-				AC269960CFCB6E7A72545079ECF6815A /* Pods-JWWaveView_Tests-umbrella.h */,
-				5CEF0578EEAB57031673D991CF6370CC /* Pods-JWWaveView_Tests.debug.xcconfig */,
-				2D80AF223557C3FCA87755C0E805B240 /* Pods-JWWaveView_Tests.release.xcconfig */,
-			);
-			name = "Pods-JWWaveView_Tests";
-			path = "Target Support Files/Pods-JWWaveView_Tests";
-			sourceTree = "<group>";
-		};
-		A9796A022A199AF61CA077BDD99F3215 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D4B4F29500DCB4B0BEB6A1B8750E704F /* Info.plist */,
-				DC25C4FA762BAD06597F1944734D7442 /* JWWaveView.modulemap */,
-				AA34473E61A7B2B61D39A721D049DD26 /* JWWaveView.xcconfig */,
-				BDA5C93A09EAA19D87253739638EB4F2 /* JWWaveView-dummy.m */,
-				EAF26D6CE6443CB990E1FAA4ED8BDD66 /* JWWaveView-prefix.pch */,
-				785380319347B99344993DA4FA81B462 /* JWWaveView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/JWWaveView";
-			sourceTree = "<group>";
-		};
-		B27DFF7CB6C00503CB6367D1C668A6DB /* Pods-JWWaveView_Example */ = {
-			isa = PBXGroup;
-			children = (
-				E59DA5F43402C135C4B788AA8BC3469A /* Info.plist */,
-				506F49C6F21D506B871146EEC60DC2F3 /* Pods-JWWaveView_Example.modulemap */,
-				D6550261F79696C7D6C75F7E86807B50 /* Pods-JWWaveView_Example-acknowledgements.markdown */,
-				C73355DC35C73B0F340BC0723C138DA8 /* Pods-JWWaveView_Example-acknowledgements.plist */,
-				397CB3C8C1144E5488FDFDD3FCAAAA71 /* Pods-JWWaveView_Example-dummy.m */,
-				6A2C4305B430E6E35129B5486A458F9D /* Pods-JWWaveView_Example-frameworks.sh */,
-				A85B70D05252FA10C1A5DA88B5F20D8C /* Pods-JWWaveView_Example-resources.sh */,
-				4ABF1AB4C71303AAE921C6A4AD1D9BC8 /* Pods-JWWaveView_Example-umbrella.h */,
-				42B2C5A2955E6522B29D97782375F345 /* Pods-JWWaveView_Example.debug.xcconfig */,
-				6D040F01F3E61AE1933BF1B3F9ED0AEC /* Pods-JWWaveView_Example.release.xcconfig */,
-			);
-			name = "Pods-JWWaveView_Example";
-			path = "Target Support Files/Pods-JWWaveView_Example";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -190,6 +172,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE4AB951D17DD338827CA42763920316 /* JWWaveView */ = {
+			isa = PBXGroup;
+			children = (
+				C0A6A9B3BF54E9CBC6CB82C8B244C0F5 /* JWWaveView.h */,
+				CA425E31F53D4FDB6262FDC631AF5160 /* JWWaveView.m */,
+				06C6E21FC7AA0DBB7DC6F29DE0CD95FC /* Support Files */,
+			);
+			name = JWWaveView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,51 +191,62 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F0FAA6AC3D3C35135E785CDFF306087A /* Development Pods */ = {
+		E7E0AD8A3C75AEF17D9765DBF13C1924 /* Pods-JWWaveView */ = {
 			isa = PBXGroup;
 			children = (
-				7016D0C048F5D9FEB5C7F7CB00616B29 /* JWWaveView */,
+				4E1D7B3E11A7DF95E5699F447FBF23A2 /* Info.plist */,
+				6C3F56E22E80177E14F5387EE14F4FAC /* Pods-JWWaveView.modulemap */,
+				EE06D69ABA5DE1B739DD818FD7169A8F /* Pods-JWWaveView-acknowledgements.markdown */,
+				E3AD1858CF50EE61723FC19A547BDD57 /* Pods-JWWaveView-acknowledgements.plist */,
+				2CE43F30373AB93988A2188F6009C2EB /* Pods-JWWaveView-dummy.m */,
+				6CA4F9FBEB8770924C82D851F0C68B10 /* Pods-JWWaveView-frameworks.sh */,
+				C41975BC43CAC27B412C19A88EC038DF /* Pods-JWWaveView-resources.sh */,
+				1106DA2767E78E97BB604C3AAB402EC9 /* Pods-JWWaveView-umbrella.h */,
+				2C7E8AACF6FBAF2421E803F3500C190E /* Pods-JWWaveView.debug.xcconfig */,
+				04696E08BC3F2A42DDEE45DEB82D2D1F /* Pods-JWWaveView.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Pods-JWWaveView";
+			path = "Target Support Files/Pods-JWWaveView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		16BCA0FB992448067265B0AAFF38F25E /* Headers */ = {
+		18554ED84DF78AB21659553FC6A05973 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBE1427198E8A58019E5B902594EF043 /* Pods-JWWaveView_Tests-umbrella.h in Headers */,
+				4077DCF40919CD72463AC0EE95353F48 /* Pods-JWWaveViewTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A38131098E799A2B8B75D12C50AD45C /* Headers */ = {
+		2C4CA9AE5C555ABEB496F76874B95255 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F3D0E136B7FE7459D3E7DA59FAA058 /* JWWaveView-umbrella.h in Headers */,
+				8A49E3CB49609D250CAD2D8BCF0E6635 /* Pods-JWWaveView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE6ED217F40295BB70ADFBC22D71ED74 /* Headers */ = {
+		75EB1DFB561857C2C3E82E3A696F12BE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58190CDD9CD288B41E0E1564B977BC14 /* Pods-JWWaveView_Example-umbrella.h in Headers */,
+				2CCDC622F35C4730EEBBA9E5B342DA12 /* JWWaveView-umbrella.h in Headers */,
+				F659E52000B4F473993CF25371AF1939 /* JWWaveView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		27E7AB6F5B4993CB94F59222C3E0E223 /* JWWaveView */ = {
+		89F89EDB85745C104E6C439ADC83BD14 /* JWWaveView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 808BDB5F702DA115F3E1066FA59C87C4 /* Build configuration list for PBXNativeTarget "JWWaveView" */;
+			buildConfigurationList = D54304E3C11CE8816525300596D033E3 /* Build configuration list for PBXNativeTarget "JWWaveView" */;
 			buildPhases = (
-				A1AC433F363A03A456D592E930E09E4B /* Sources */,
-				632F7B070E7CA971576ECF8880C1C1C5 /* Frameworks */,
-				3A38131098E799A2B8B75D12C50AD45C /* Headers */,
+				5A0ACA5C001C036F21D4F12F4F2B6524 /* Sources */,
+				E0C6C2343639B46B9330A7010F3C71AD /* Frameworks */,
+				75EB1DFB561857C2C3E82E3A696F12BE /* Headers */,
 			);
 			buildRules = (
 			);
@@ -250,42 +254,42 @@
 			);
 			name = JWWaveView;
 			productName = JWWaveView;
-			productReference = 84F6D172651E4B1CA890C02592B9CDFC /* JWWaveView.framework */;
+			productReference = E3AD4F6184FEFF5E5C578AC524FD126B /* JWWaveView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BB70BE915DD358886C74A27E84D6CDD1 /* Pods-JWWaveView_Tests */ = {
+		B092BD56A17BCA47618A1AA6DC8804DD /* Pods-JWWaveView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F9E5B998D73EB4BAEA92F6AFACA68F1 /* Build configuration list for PBXNativeTarget "Pods-JWWaveView_Tests" */;
+			buildConfigurationList = BD670BF38ACA96F65C94EA9580FDF2CF /* Build configuration list for PBXNativeTarget "Pods-JWWaveView" */;
 			buildPhases = (
-				D27F4244AB3BCD62520EECBA2346B13D /* Sources */,
-				59C54163A2B69FDA05B1AA983CE7D7CB /* Frameworks */,
-				16BCA0FB992448067265B0AAFF38F25E /* Headers */,
+				C04B0D3CDDF552C187F3F156DECA095D /* Sources */,
+				4DCF909008D717A40E571D96EB880D2C /* Frameworks */,
+				2C4CA9AE5C555ABEB496F76874B95255 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8088312443A2934D3FF7F9526EDBD753 /* PBXTargetDependency */,
+			);
+			name = "Pods-JWWaveView";
+			productName = "Pods-JWWaveView";
+			productReference = 094CD9BFDB5CA0C241C5071B510D1BEF /* Pods_JWWaveView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BA59C7A6FF0FDEFBAE5E5E56B027B6EA /* Pods-JWWaveViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE49E6B11A0E7BA1CE31D4289193AA4 /* Build configuration list for PBXNativeTarget "Pods-JWWaveViewTests" */;
+			buildPhases = (
+				4D02EA84CA8017EDB3748A97DB8F4AAF /* Sources */,
+				CDE627871890765076DEF954245C0E7C /* Frameworks */,
+				18554ED84DF78AB21659553FC6A05973 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-JWWaveView_Tests";
-			productName = "Pods-JWWaveView_Tests";
-			productReference = 3E2F6A47D9C456AD53D91538DCE79D48 /* Pods_JWWaveView_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FF225DB902CDA50C36A79DF3B5AA3368 /* Pods-JWWaveView_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 48F6D26909D8345515FF0CE0A39DE039 /* Build configuration list for PBXNativeTarget "Pods-JWWaveView_Example" */;
-			buildPhases = (
-				F84A48BA13182A5793B8C1F2646A6DF1 /* Sources */,
-				C5371A1AD7B9CFEA5AA100EA94C9C244 /* Frameworks */,
-				BE6ED217F40295BB70ADFBC22D71ED74 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				509244002C87304502F8DE8C22EFF007 /* PBXTargetDependency */,
-			);
-			name = "Pods-JWWaveView_Example";
-			productName = "Pods-JWWaveView_Example";
-			productReference = 08C9862ACCB4F3FCA33AFC333AA13C9A /* Pods_JWWaveView_Example.framework */;
+			name = "Pods-JWWaveViewTests";
+			productName = "Pods-JWWaveViewTests";
+			productReference = A6FF7D27FF93A3FE73ECDDB0A915B4E2 /* Pods_JWWaveViewTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -305,138 +309,58 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 8BD2058BADE96B33CC7064FA0ADE6572 /* Products */;
+			productRefGroup = BB7CE4D0B606559009C84CE2A60AF506 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				27E7AB6F5B4993CB94F59222C3E0E223 /* JWWaveView */,
-				FF225DB902CDA50C36A79DF3B5AA3368 /* Pods-JWWaveView_Example */,
-				BB70BE915DD358886C74A27E84D6CDD1 /* Pods-JWWaveView_Tests */,
+				89F89EDB85745C104E6C439ADC83BD14 /* JWWaveView */,
+				B092BD56A17BCA47618A1AA6DC8804DD /* Pods-JWWaveView */,
+				BA59C7A6FF0FDEFBAE5E5E56B027B6EA /* Pods-JWWaveViewTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A1AC433F363A03A456D592E930E09E4B /* Sources */ = {
+		4D02EA84CA8017EDB3748A97DB8F4AAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB0AFA9D6E2A0BE9E28347E7ECFD5B58 /* JWWaveView-dummy.m in Sources */,
-				4C4678440D7B7D356693FB45F405529A /* ReplaceMe.m in Sources */,
+				361D6D37F36482191390BDB3FC63DE27 /* Pods-JWWaveViewTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D27F4244AB3BCD62520EECBA2346B13D /* Sources */ = {
+		5A0ACA5C001C036F21D4F12F4F2B6524 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58A1BD69A2E125E42EA96EB74EFF632B /* Pods-JWWaveView_Tests-dummy.m in Sources */,
+				E039F3830C4DA4974CB54061B8394471 /* JWWaveView-dummy.m in Sources */,
+				063DCD1ADE8A7F55839D8DD5A8D8AE1D /* JWWaveView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F84A48BA13182A5793B8C1F2646A6DF1 /* Sources */ = {
+		C04B0D3CDDF552C187F3F156DECA095D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F27C1AF5CE35B414E31CD61F47DF8EA6 /* Pods-JWWaveView_Example-dummy.m in Sources */,
+				D4B81633B610ECD74A8356BFC38A4545 /* Pods-JWWaveView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		509244002C87304502F8DE8C22EFF007 /* PBXTargetDependency */ = {
+		8088312443A2934D3FF7F9526EDBD753 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JWWaveView;
-			target = 27E7AB6F5B4993CB94F59222C3E0E223 /* JWWaveView */;
-			targetProxy = 7330A859394EEB0668D780758BDF0164 /* PBXContainerItemProxy */;
+			target = 89F89EDB85745C104E6C439ADC83BD14 /* JWWaveView */;
+			targetProxy = DE0016DD6D00DDD999FBCBA1149C42C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0932B9839DADC508285A8E489B63A505 /* Debug */ = {
+		097E9B360D86279D5F75249E24B5488A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CEF0578EEAB57031673D991CF6370CC /* Pods-JWWaveView_Tests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-JWWaveView_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JWWaveView_Tests/Pods-JWWaveView_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_JWWaveView_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2DFCDE6C6D8C861465BCC2175F5C22FD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA34473E61A7B2B61D39A721D049DD26 /* JWWaveView.xcconfig */;
+			baseConfigurationReference = 8625C098B1BC7F94BECD2044437BFA65 /* JWWaveView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -467,42 +391,9 @@
 			};
 			name = Release;
 		};
-		3BE0D349050E8CAE0995A8A4BEAE510F /* Debug */ = {
+		0A8206BF6EE7C66B36711A894DE70AFD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA34473E61A7B2B61D39A721D049DD26 /* JWWaveView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JWWaveView/JWWaveView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JWWaveView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JWWaveView/JWWaveView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = JWWaveView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4EB8D2B5DE4E7EAECC04E3489FA6B4DE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D040F01F3E61AE1933BF1B3F9ED0AEC /* Pods-JWWaveView_Example.release.xcconfig */;
+			baseConfigurationReference = D66E13B20D0FEAA891C0B1AE1FCF5A0C /* Pods-JWWaveViewTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -516,18 +407,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-JWWaveView_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-JWWaveViewTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JWWaveView_Example/Pods-JWWaveView_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-JWWaveViewTests/Pods-JWWaveViewTests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_JWWaveView_Example;
+				PRODUCT_NAME = Pods_JWWaveViewTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -536,43 +427,7 @@
 			};
 			name = Release;
 		};
-		784C459BC3C255B03E8CDC28AF9E00BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42B2C5A2955E6522B29D97782375F345 /* Pods-JWWaveView_Example.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-JWWaveView_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JWWaveView_Example/Pods-JWWaveView_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_JWWaveView_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EED546DBB23FC32035C9BDC4E22B30BD /* Debug */ = {
+		1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -612,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -621,9 +476,122 @@
 			};
 			name = Debug;
 		};
-		FE6EC163B7A668F08620F4514D681D2B /* Release */ = {
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D80AF223557C3FCA87755C0E805B240 /* Pods-JWWaveView_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39D9D28D1CF945317530A01E0B53D6ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C7E8AACF6FBAF2421E803F3500C190E /* Pods-JWWaveView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JWWaveView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JWWaveView/Pods-JWWaveView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JWWaveView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		74619251728F67204EB0B3BAFE3C70AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8625C098B1BC7F94BECD2044437BFA65 /* JWWaveView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JWWaveView/JWWaveView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JWWaveView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JWWaveView/JWWaveView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JWWaveView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BDF5B70A57092285DC5B4DBF640AF861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04696E08BC3F2A42DDEE45DEB82D2D1F /* Pods-JWWaveView.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -637,18 +605,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-JWWaveView_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-JWWaveView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JWWaveView_Tests/Pods-JWWaveView_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-JWWaveView/Pods-JWWaveView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_JWWaveView_Tests;
+				PRODUCT_NAME = Pods_JWWaveView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -657,41 +625,77 @@
 			};
 			name = Release;
 		};
+		DC94D7F102E1EDBD11D976F360CF14DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F720C4039416171AE08698FC00E7E28A /* Pods-JWWaveViewTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JWWaveViewTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JWWaveViewTests/Pods-JWWaveViewTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JWWaveViewTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EED546DBB23FC32035C9BDC4E22B30BD /* Debug */,
-				157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */,
+				1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		48F6D26909D8345515FF0CE0A39DE039 /* Build configuration list for PBXNativeTarget "Pods-JWWaveView_Example" */ = {
+		BD670BF38ACA96F65C94EA9580FDF2CF /* Build configuration list for PBXNativeTarget "Pods-JWWaveView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				784C459BC3C255B03E8CDC28AF9E00BC /* Debug */,
-				4EB8D2B5DE4E7EAECC04E3489FA6B4DE /* Release */,
+				39D9D28D1CF945317530A01E0B53D6ED /* Debug */,
+				BDF5B70A57092285DC5B4DBF640AF861 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		808BDB5F702DA115F3E1066FA59C87C4 /* Build configuration list for PBXNativeTarget "JWWaveView" */ = {
+		BFE49E6B11A0E7BA1CE31D4289193AA4 /* Build configuration list for PBXNativeTarget "Pods-JWWaveViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3BE0D349050E8CAE0995A8A4BEAE510F /* Debug */,
-				2DFCDE6C6D8C861465BCC2175F5C22FD /* Release */,
+				DC94D7F102E1EDBD11D976F360CF14DB /* Debug */,
+				0A8206BF6EE7C66B36711A894DE70AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F9E5B998D73EB4BAEA92F6AFACA68F1 /* Build configuration list for PBXNativeTarget "Pods-JWWaveView_Tests" */ = {
+		D54304E3C11CE8816525300596D033E3 /* Build configuration list for PBXNativeTarget "JWWaveView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0932B9839DADC508285A8E489B63A505 /* Debug */,
-				FE6EC163B7A668F08620F4514D681D2B /* Release */,
+				74619251728F67204EB0B3BAFE3C70AF /* Debug */,
+				097E9B360D86279D5F75249E24B5488A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,6 +1,0 @@
-framework module Pods_JWWaveView_Tests {
-  umbrella header "Pods-JWWaveView_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

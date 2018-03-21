@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "JWWaveView.h"
 
 FOUNDATION_EXPORT double JWWaveViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char JWWaveViewVersionString[];

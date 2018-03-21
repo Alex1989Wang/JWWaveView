@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97DF8F5A4F6B1060E580A2ED /* Pods_JWWaveView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCFA4942310802B0B552965 /* Pods_JWWaveView.framework */; };
+		A9A27926905C72DEFC1946BD /* Pods_JWWaveViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25F12FA8F3954C416AC3CFC /* Pods_JWWaveViewTests.framework */; };
 		C2318FA2206245E800EF0C07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FA1206245E800EF0C07 /* main.m */; };
 		C2318FA5206245E800EF0C07 /* JWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FA4206245E800EF0C07 /* JWAppDelegate.m */; };
 		C2318FAD206245E800EF0C07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2318FAC206245E800EF0C07 /* Assets.xcassets */; };
@@ -14,7 +16,6 @@
 		C2318FBB206245E900EF0C07 /* JWWaveViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FBA206245E900EF0C07 /* JWWaveViewTests.m */; };
 		C2318FC6206245E900EF0C07 /* JWWaveViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FC5206245E900EF0C07 /* JWWaveViewUITests.m */; };
 		C2318FD6206247BD00EF0C07 /* JWMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FD5206247BD00EF0C07 /* JWMainTableViewController.m */; };
-		C2318FE2206248E500EF0C07 /* JWWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FD9206248E500EF0C07 /* JWWaveView.m */; };
 		C2318FEB206249EC00EF0C07 /* JWWaveTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FE7206249EC00EF0C07 /* JWWaveTableCell.m */; };
 		C2318FEC206249EC00EF0C07 /* JWWaveInCellTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FE8206249EC00EF0C07 /* JWWaveInCellTestViewController.m */; };
 		C2318FEE206253B700EF0C07 /* JWWaveView-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2318FED206253B700EF0C07 /* JWWaveView-Info.plist */; };
@@ -38,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EDAEA0B604E65AD5F31A54A /* Pods-JWWaveView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWWaveView.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWWaveView/Pods-JWWaveView.release.xcconfig"; sourceTree = "<group>"; };
+		33659F47E3B45E1B86FC355A /* Pods-JWWaveViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWWaveViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWWaveViewTests/Pods-JWWaveViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		ADCFA4942310802B0B552965 /* Pods_JWWaveView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWWaveView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B637172338F2B5EF3A0420C0 /* Pods-JWWaveViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWWaveViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWWaveViewTests/Pods-JWWaveViewTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C2318F9D206245E800EF0C07 /* JWWaveView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWWaveView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2318FA1206245E800EF0C07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C2318FA3206245E800EF0C07 /* JWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWAppDelegate.h; sourceTree = "<group>"; };
@@ -52,13 +57,13 @@
 		C2318FC7206245E900EF0C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2318FD4206247BD00EF0C07 /* JWMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWMainTableViewController.h; sourceTree = "<group>"; };
 		C2318FD5206247BD00EF0C07 /* JWMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWMainTableViewController.m; sourceTree = "<group>"; };
-		C2318FD9206248E500EF0C07 /* JWWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWWaveView.m; sourceTree = "<group>"; };
-		C2318FDD206248E500EF0C07 /* JWWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWWaveView.h; sourceTree = "<group>"; };
 		C2318FE7206249EC00EF0C07 /* JWWaveTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWWaveTableCell.m; sourceTree = "<group>"; };
 		C2318FE8206249EC00EF0C07 /* JWWaveInCellTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWWaveInCellTestViewController.m; sourceTree = "<group>"; };
 		C2318FE9206249EC00EF0C07 /* JWWaveTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWWaveTableCell.h; sourceTree = "<group>"; };
 		C2318FEA206249EC00EF0C07 /* JWWaveInCellTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWWaveInCellTestViewController.h; sourceTree = "<group>"; };
 		C2318FED206253B700EF0C07 /* JWWaveView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JWWaveView-Info.plist"; sourceTree = "<group>"; };
+		C67C40C6D025599D9CA2ADE1 /* Pods-JWWaveView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWWaveView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWWaveView/Pods-JWWaveView.debug.xcconfig"; sourceTree = "<group>"; };
+		E25F12FA8F3954C416AC3CFC /* Pods_JWWaveViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWWaveViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97DF8F5A4F6B1060E580A2ED /* Pods_JWWaveView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A27926905C72DEFC1946BD /* Pods_JWWaveViewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +93,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B463296925E39A70DD53602D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C67C40C6D025599D9CA2ADE1 /* Pods-JWWaveView.debug.xcconfig */,
+				0EDAEA0B604E65AD5F31A54A /* Pods-JWWaveView.release.xcconfig */,
+				B637172338F2B5EF3A0420C0 /* Pods-JWWaveViewTests.debug.xcconfig */,
+				33659F47E3B45E1B86FC355A /* Pods-JWWaveViewTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C2318F94206245E800EF0C07 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +111,8 @@
 				C2318FB9206245E900EF0C07 /* JWWaveViewTests */,
 				C2318FC4206245E900EF0C07 /* JWWaveViewUITests */,
 				C2318F9E206245E800EF0C07 /* Products */,
+				B463296925E39A70DD53602D /* Pods */,
+				C6F4CCDF65D541ABE241B75B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,7 +134,6 @@
 				C2318FED206253B700EF0C07 /* JWWaveView-Info.plist */,
 				C2318FAC206245E800EF0C07 /* Assets.xcassets */,
 				C2318FAE206245E800EF0C07 /* LaunchScreen.storyboard */,
-				C2318FD7206248E500EF0C07 /* WaveEffect */,
 				C2318FD32062479E00EF0C07 /* TestExamples */,
 				C2318FA0206245E800EF0C07 /* Supporting Files */,
 			);
@@ -157,15 +176,6 @@
 			path = TestExamples;
 			sourceTree = "<group>";
 		};
-		C2318FD7206248E500EF0C07 /* WaveEffect */ = {
-			isa = PBXGroup;
-			children = (
-				C2318FDD206248E500EF0C07 /* JWWaveView.h */,
-				C2318FD9206248E500EF0C07 /* JWWaveView.m */,
-			);
-			path = WaveEffect;
-			sourceTree = "<group>";
-		};
 		C2318FE6206249EC00EF0C07 /* WaveViewInCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +187,15 @@
 			path = WaveViewInCells;
 			sourceTree = "<group>";
 		};
+		C6F4CCDF65D541ABE241B75B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADCFA4942310802B0B552965 /* Pods_JWWaveView.framework */,
+				E25F12FA8F3954C416AC3CFC /* Pods_JWWaveViewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2318FCA206245E900EF0C07 /* Build configuration list for PBXNativeTarget "JWWaveView" */;
 			buildPhases = (
+				1B733F8B634760419BB0D154 /* [CP] Check Pods Manifest.lock */,
 				C2318F99206245E800EF0C07 /* Sources */,
 				C2318F9A206245E800EF0C07 /* Frameworks */,
 				C2318F9B206245E800EF0C07 /* Resources */,
+				AA51EF542BB803703A21B12C /* [CP] Embed Pods Frameworks */,
+				E995EB7D029F22B73C3237ED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,9 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2318FCD206245E900EF0C07 /* Build configuration list for PBXNativeTarget "JWWaveViewTests" */;
 			buildPhases = (
+				64C5C0A19671905264040978 /* [CP] Check Pods Manifest.lock */,
 				C2318FB2206245E900EF0C07 /* Sources */,
 				C2318FB3206245E900EF0C07 /* Frameworks */,
 				C2318FB4206245E900EF0C07 /* Resources */,
+				8CF07398FEBD2655163E9135 /* [CP] Embed Pods Frameworks */,
+				B2A1E307EEFCDBC79608FC49 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,13 +334,114 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B733F8B634760419BB0D154 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JWWaveView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64C5C0A19671905264040978 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JWWaveViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CF07398FEBD2655163E9135 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWWaveViewTests/Pods-JWWaveViewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA51EF542BB803703A21B12C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JWWaveView/Pods-JWWaveView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JWWaveView/JWWaveView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWWaveView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWWaveView/Pods-JWWaveView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2A1E307EEFCDBC79608FC49 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWWaveViewTests/Pods-JWWaveViewTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E995EB7D029F22B73C3237ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWWaveView/Pods-JWWaveView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C2318F99206245E800EF0C07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C2318FEC206249EC00EF0C07 /* JWWaveInCellTestViewController.m in Sources */,
-				C2318FE2206248E500EF0C07 /* JWWaveView.m in Sources */,
 				C2318FA5206245E800EF0C07 /* JWAppDelegate.m in Sources */,
 				C2318FD6206247BD00EF0C07 /* JWMainTableViewController.m in Sources */,
 				C2318FA2206245E800EF0C07 /* main.m in Sources */,
@@ -458,6 +584,7 @@
 		};
 		C2318FCB206245E900EF0C07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C67C40C6D025599D9CA2ADE1 /* Pods-JWWaveView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y39R442P5T;
@@ -471,6 +598,7 @@
 		};
 		C2318FCC206245E900EF0C07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EDAEA0B604E65AD5F31A54A /* Pods-JWWaveView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y39R442P5T;
@@ -484,6 +612,7 @@
 		};
 		C2318FCE206245E900EF0C07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B637172338F2B5EF3A0420C0 /* Pods-JWWaveViewTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = Y39R442P5T;
@@ -497,6 +626,7 @@
 		};
 		C2318FCF206245E900EF0C07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33659F47E3B45E1B86FC355A /* Pods-JWWaveViewTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = Y39R442P5T;
