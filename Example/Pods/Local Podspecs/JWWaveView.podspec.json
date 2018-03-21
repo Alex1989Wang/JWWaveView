@@ -1,0 +1,22 @@
+{
+  "name": "JWWaveView",
+  "version": "0.1.0",
+  "summary": "A short description of JWWaveView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Alex1989Wang/JWWaveView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Alex1989Wang": "alex1989wang@foxmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Alex1989Wang/JWWaveView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "JWWaveView/Classes/**/*"
+}

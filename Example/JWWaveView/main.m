@@ -2,15 +2,14 @@
 //  main.m
 //  JWWaveView
 //
-//  Created by Alex1989Wang on 03/21/2018.
-//  Copyright (c) 2018 Alex1989Wang. All rights reserved.
+//  Created by JiangWang on 21/03/2018.
+//  Copyright © 2018 JiangWang. All rights reserved.
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 #import "JWAppDelegate.h"
 
-int main(int argc, char * argv[])
-{
+int main(int argc, char * argv[]) {
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([JWAppDelegate class]));
     }

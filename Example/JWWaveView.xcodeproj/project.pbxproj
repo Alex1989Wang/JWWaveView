@@ -7,255 +7,262 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08DF329F9264DC2643D5251B /* Pods_JWWaveView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BD6DEB02FBBC8E7ACC7B7B /* Pods_JWWaveView_Example.framework */; };
-		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
-		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
-		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
-		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* JWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* JWAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* JWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* JWViewController.m */; };
-		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
-		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
-		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
-		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		EA6B4B51504C3A141800F4FB /* Pods_JWWaveView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB94B91D2679E33D04130BF /* Pods_JWWaveView_Tests.framework */; };
+		C2318FA2206245E800EF0C07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FA1206245E800EF0C07 /* main.m */; };
+		C2318FA5206245E800EF0C07 /* JWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FA4206245E800EF0C07 /* JWAppDelegate.m */; };
+		C2318FAD206245E800EF0C07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2318FAC206245E800EF0C07 /* Assets.xcassets */; };
+		C2318FB0206245E800EF0C07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2318FAE206245E800EF0C07 /* LaunchScreen.storyboard */; };
+		C2318FBB206245E900EF0C07 /* JWWaveViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FBA206245E900EF0C07 /* JWWaveViewTests.m */; };
+		C2318FC6206245E900EF0C07 /* JWWaveViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FC5206245E900EF0C07 /* JWWaveViewUITests.m */; };
+		C2318FD6206247BD00EF0C07 /* JWMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FD5206247BD00EF0C07 /* JWMainTableViewController.m */; };
+		C2318FE2206248E500EF0C07 /* JWWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FD9206248E500EF0C07 /* JWWaveView.m */; };
+		C2318FEB206249EC00EF0C07 /* JWWaveTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FE7206249EC00EF0C07 /* JWWaveTableCell.m */; };
+		C2318FEC206249EC00EF0C07 /* JWWaveInCellTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FE8206249EC00EF0C07 /* JWWaveInCellTestViewController.m */; };
+		C2318FEE206253B700EF0C07 /* JWWaveView-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2318FED206253B700EF0C07 /* JWWaveView-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
+		C2318FB7206245E900EF0C07 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			containerPortal = C2318F95206245E800EF0C07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6003F589195388D20070C39A;
+			remoteGlobalIDString = C2318F9C206245E800EF0C07;
+			remoteInfo = JWWaveView;
+		};
+		C2318FC2206245E900EF0C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2318F95206245E800EF0C07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2318F9C206245E800EF0C07;
 			remoteInfo = JWWaveView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0885E07104E798384B8AAD61 /* Pods-JWWaveView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWWaveView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWWaveView_Example/Pods-JWWaveView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2055CDAD1AD415C651B9B312 /* Pods-JWWaveView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWWaveView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWWaveView_Example/Pods-JWWaveView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* JWWaveView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWWaveView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F595195388D20070C39A /* JWWaveView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JWWaveView-Info.plist"; sourceTree = "<group>"; };
-		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6003F59B195388D20070C39A /* JWWaveView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JWWaveView-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* JWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* JWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* JWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* JWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWViewController.m; sourceTree = "<group>"; };
-		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* JWWaveView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JWWaveView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
-		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
-		601BF25A74CCBC0B5E6E9A24 /* Pods-JWWaveView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWWaveView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWWaveView_Tests/Pods-JWWaveView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		61BD6DEB02FBBC8E7ACC7B7B /* Pods_JWWaveView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWWaveView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		61D9D5B2058CDD7179E1149E /* Pods-JWWaveView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWWaveView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWWaveView_Tests/Pods-JWWaveView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BB4FF6E1146AF460EF59FF1D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		C66A6119BA5BF99F4DB20C41 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		E82A658366A8D68233B1660B /* JWWaveView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JWWaveView.podspec; path = ../JWWaveView.podspec; sourceTree = "<group>"; };
-		EEB94B91D2679E33D04130BF /* Pods_JWWaveView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWWaveView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2318F9D206245E800EF0C07 /* JWWaveView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWWaveView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2318FA1206245E800EF0C07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2318FA3206245E800EF0C07 /* JWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWAppDelegate.h; sourceTree = "<group>"; };
+		C2318FA4206245E800EF0C07 /* JWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWAppDelegate.m; sourceTree = "<group>"; };
+		C2318FAC206245E800EF0C07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2318FAF206245E800EF0C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C2318FB6206245E900EF0C07 /* JWWaveViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JWWaveViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2318FBA206245E900EF0C07 /* JWWaveViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWWaveViewTests.m; sourceTree = "<group>"; };
+		C2318FBC206245E900EF0C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2318FC1206245E900EF0C07 /* JWWaveViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JWWaveViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2318FC5206245E900EF0C07 /* JWWaveViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWWaveViewUITests.m; sourceTree = "<group>"; };
+		C2318FC7206245E900EF0C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2318FD4206247BD00EF0C07 /* JWMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWMainTableViewController.h; sourceTree = "<group>"; };
+		C2318FD5206247BD00EF0C07 /* JWMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWMainTableViewController.m; sourceTree = "<group>"; };
+		C2318FD9206248E500EF0C07 /* JWWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWWaveView.m; sourceTree = "<group>"; };
+		C2318FDD206248E500EF0C07 /* JWWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWWaveView.h; sourceTree = "<group>"; };
+		C2318FE7206249EC00EF0C07 /* JWWaveTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWWaveTableCell.m; sourceTree = "<group>"; };
+		C2318FE8206249EC00EF0C07 /* JWWaveInCellTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWWaveInCellTestViewController.m; sourceTree = "<group>"; };
+		C2318FE9206249EC00EF0C07 /* JWWaveTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWWaveTableCell.h; sourceTree = "<group>"; };
+		C2318FEA206249EC00EF0C07 /* JWWaveInCellTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWWaveInCellTestViewController.h; sourceTree = "<group>"; };
+		C2318FED206253B700EF0C07 /* JWWaveView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JWWaveView-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6003F587195388D20070C39A /* Frameworks */ = {
+		C2318F9A206245E800EF0C07 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
-				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
-				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				08DF329F9264DC2643D5251B /* Pods_JWWaveView_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6003F5AB195388D20070C39A /* Frameworks */ = {
+		C2318FB3206245E900EF0C07 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
-				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
-				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				EA6B4B51504C3A141800F4FB /* Pods_JWWaveView_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2318FBE206245E900EF0C07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6003F581195388D10070C39A = {
+		C2318F94206245E800EF0C07 = {
 			isa = PBXGroup;
 			children = (
-				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				6003F593195388D20070C39A /* Example for JWWaveView */,
-				6003F5B5195388D20070C39A /* Tests */,
-				6003F58C195388D20070C39A /* Frameworks */,
-				6003F58B195388D20070C39A /* Products */,
-				73E90FD1450CDB20E7FE42C0 /* Pods */,
+				C2318F9F206245E800EF0C07 /* JWWaveView */,
+				C2318FB9206245E900EF0C07 /* JWWaveViewTests */,
+				C2318FC4206245E900EF0C07 /* JWWaveViewUITests */,
+				C2318F9E206245E800EF0C07 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6003F58B195388D20070C39A /* Products */ = {
+		C2318F9E206245E800EF0C07 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* JWWaveView_Example.app */,
-				6003F5AE195388D20070C39A /* JWWaveView_Tests.xctest */,
+				C2318F9D206245E800EF0C07 /* JWWaveView.app */,
+				C2318FB6206245E900EF0C07 /* JWWaveViewTests.xctest */,
+				C2318FC1206245E900EF0C07 /* JWWaveViewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6003F58C195388D20070C39A /* Frameworks */ = {
+		C2318F9F206245E800EF0C07 /* JWWaveView */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58D195388D20070C39A /* Foundation.framework */,
-				6003F58F195388D20070C39A /* CoreGraphics.framework */,
-				6003F591195388D20070C39A /* UIKit.framework */,
-				6003F5AF195388D20070C39A /* XCTest.framework */,
-				61BD6DEB02FBBC8E7ACC7B7B /* Pods_JWWaveView_Example.framework */,
-				EEB94B91D2679E33D04130BF /* Pods_JWWaveView_Tests.framework */,
+				C2318FA3206245E800EF0C07 /* JWAppDelegate.h */,
+				C2318FA4206245E800EF0C07 /* JWAppDelegate.m */,
+				C2318FED206253B700EF0C07 /* JWWaveView-Info.plist */,
+				C2318FAC206245E800EF0C07 /* Assets.xcassets */,
+				C2318FAE206245E800EF0C07 /* LaunchScreen.storyboard */,
+				C2318FD7206248E500EF0C07 /* WaveEffect */,
+				C2318FD32062479E00EF0C07 /* TestExamples */,
+				C2318FA0206245E800EF0C07 /* Supporting Files */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6003F593195388D20070C39A /* Example for JWWaveView */ = {
-			isa = PBXGroup;
-			children = (
-				6003F59C195388D20070C39A /* JWAppDelegate.h */,
-				6003F59D195388D20070C39A /* JWAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* JWViewController.h */,
-				6003F5A6195388D20070C39A /* JWViewController.m */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
-				6003F594195388D20070C39A /* Supporting Files */,
-			);
-			name = "Example for JWWaveView";
 			path = JWWaveView;
 			sourceTree = "<group>";
 		};
-		6003F594195388D20070C39A /* Supporting Files */ = {
+		C2318FA0206245E800EF0C07 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6003F595195388D20070C39A /* JWWaveView-Info.plist */,
-				6003F596195388D20070C39A /* InfoPlist.strings */,
-				6003F599195388D20070C39A /* main.m */,
-				6003F59B195388D20070C39A /* JWWaveView-Prefix.pch */,
+				C2318FA1206245E800EF0C07 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6003F5B5195388D20070C39A /* Tests */ = {
+		C2318FB9206245E900EF0C07 /* JWWaveViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
-				6003F5B6195388D20070C39A /* Supporting Files */,
+				C2318FBA206245E900EF0C07 /* JWWaveViewTests.m */,
+				C2318FBC206245E900EF0C07 /* Info.plist */,
 			);
-			path = Tests;
+			path = JWWaveViewTests;
 			sourceTree = "<group>";
 		};
-		6003F5B6195388D20070C39A /* Supporting Files */ = {
+		C2318FC4206245E900EF0C07 /* JWWaveViewUITests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5B7195388D20070C39A /* Tests-Info.plist */,
-				6003F5B8195388D20070C39A /* InfoPlist.strings */,
-				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
+				C2318FC5206245E900EF0C07 /* JWWaveViewUITests.m */,
+				C2318FC7206245E900EF0C07 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = JWWaveViewUITests;
 			sourceTree = "<group>";
 		};
-		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+		C2318FD32062479E00EF0C07 /* TestExamples */ = {
 			isa = PBXGroup;
 			children = (
-				E82A658366A8D68233B1660B /* JWWaveView.podspec */,
-				C66A6119BA5BF99F4DB20C41 /* README.md */,
-				BB4FF6E1146AF460EF59FF1D /* LICENSE */,
+				C2318FD4206247BD00EF0C07 /* JWMainTableViewController.h */,
+				C2318FD5206247BD00EF0C07 /* JWMainTableViewController.m */,
+				C2318FE6206249EC00EF0C07 /* WaveViewInCells */,
 			);
-			name = "Podspec Metadata";
+			path = TestExamples;
 			sourceTree = "<group>";
 		};
-		73E90FD1450CDB20E7FE42C0 /* Pods */ = {
+		C2318FD7206248E500EF0C07 /* WaveEffect */ = {
 			isa = PBXGroup;
 			children = (
-				0885E07104E798384B8AAD61 /* Pods-JWWaveView_Example.debug.xcconfig */,
-				2055CDAD1AD415C651B9B312 /* Pods-JWWaveView_Example.release.xcconfig */,
-				601BF25A74CCBC0B5E6E9A24 /* Pods-JWWaveView_Tests.debug.xcconfig */,
-				61D9D5B2058CDD7179E1149E /* Pods-JWWaveView_Tests.release.xcconfig */,
+				C2318FDD206248E500EF0C07 /* JWWaveView.h */,
+				C2318FD9206248E500EF0C07 /* JWWaveView.m */,
 			);
-			name = Pods;
+			path = WaveEffect;
+			sourceTree = "<group>";
+		};
+		C2318FE6206249EC00EF0C07 /* WaveViewInCells */ = {
+			isa = PBXGroup;
+			children = (
+				C2318FE9206249EC00EF0C07 /* JWWaveTableCell.h */,
+				C2318FE7206249EC00EF0C07 /* JWWaveTableCell.m */,
+				C2318FEA206249EC00EF0C07 /* JWWaveInCellTestViewController.h */,
+				C2318FE8206249EC00EF0C07 /* JWWaveInCellTestViewController.m */,
+			);
+			path = WaveViewInCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6003F589195388D20070C39A /* JWWaveView_Example */ = {
+		C2318F9C206245E800EF0C07 /* JWWaveView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "JWWaveView_Example" */;
+			buildConfigurationList = C2318FCA206245E900EF0C07 /* Build configuration list for PBXNativeTarget "JWWaveView" */;
 			buildPhases = (
-				189F0183073D936F1F4A82B6 /* [CP] Check Pods Manifest.lock */,
-				6003F586195388D20070C39A /* Sources */,
-				6003F587195388D20070C39A /* Frameworks */,
-				6003F588195388D20070C39A /* Resources */,
-				31A4FAA891F55CF2675ED51A /* [CP] Embed Pods Frameworks */,
-				2F656E3AC9817B88FD42DE72 /* [CP] Copy Pods Resources */,
+				C2318F99206245E800EF0C07 /* Sources */,
+				C2318F9A206245E800EF0C07 /* Frameworks */,
+				C2318F9B206245E800EF0C07 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = JWWaveView_Example;
+			name = JWWaveView;
 			productName = JWWaveView;
-			productReference = 6003F58A195388D20070C39A /* JWWaveView_Example.app */;
+			productReference = C2318F9D206245E800EF0C07 /* JWWaveView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6003F5AD195388D20070C39A /* JWWaveView_Tests */ = {
+		C2318FB5206245E900EF0C07 /* JWWaveViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "JWWaveView_Tests" */;
+			buildConfigurationList = C2318FCD206245E900EF0C07 /* Build configuration list for PBXNativeTarget "JWWaveViewTests" */;
 			buildPhases = (
-				39F7E269F8394CA4F11E58B9 /* [CP] Check Pods Manifest.lock */,
-				6003F5AA195388D20070C39A /* Sources */,
-				6003F5AB195388D20070C39A /* Frameworks */,
-				6003F5AC195388D20070C39A /* Resources */,
-				3D04A38D7E074931CA1DB892 /* [CP] Embed Pods Frameworks */,
-				5E6C11F6E9BE7DD08772A746 /* [CP] Copy Pods Resources */,
+				C2318FB2206245E900EF0C07 /* Sources */,
+				C2318FB3206245E900EF0C07 /* Frameworks */,
+				C2318FB4206245E900EF0C07 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6003F5B4195388D20070C39A /* PBXTargetDependency */,
+				C2318FB8206245E900EF0C07 /* PBXTargetDependency */,
 			);
-			name = JWWaveView_Tests;
+			name = JWWaveViewTests;
 			productName = JWWaveViewTests;
-			productReference = 6003F5AE195388D20070C39A /* JWWaveView_Tests.xctest */;
+			productReference = C2318FB6206245E900EF0C07 /* JWWaveViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C2318FC0206245E900EF0C07 /* JWWaveViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2318FD0206245E900EF0C07 /* Build configuration list for PBXNativeTarget "JWWaveViewUITests" */;
+			buildPhases = (
+				C2318FBD206245E900EF0C07 /* Sources */,
+				C2318FBE206245E900EF0C07 /* Frameworks */,
+				C2318FBF206245E900EF0C07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2318FC3206245E900EF0C07 /* PBXTargetDependency */,
+			);
+			name = JWWaveViewUITests;
+			productName = JWWaveViewUITests;
+			productReference = C2318FC1206245E900EF0C07 /* JWWaveViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6003F582195388D10070C39A /* Project object */ = {
+		C2318F95206245E800EF0C07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = JW;
-				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = Alex1989Wang;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = JiangWang;
 				TargetAttributes = {
-					6003F5AD195388D20070C39A = {
-						TestTargetID = 6003F589195388D20070C39A;
+					C2318F9C206245E800EF0C07 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Y39R442P5T;
+						ProvisioningStyle = Automatic;
+					};
+					C2318FB5206245E900EF0C07 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Y39R442P5T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C2318F9C206245E800EF0C07;
+					};
+					C2318FC0206245E900EF0C07 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Y39R442P5T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C2318F9C206245E800EF0C07;
 					};
 				};
 			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "JWWaveView" */;
+			buildConfigurationList = C2318F98206245E800EF0C07 /* Build configuration list for PBXProject "JWWaveView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -263,191 +270,95 @@
 				en,
 				Base,
 			);
-			mainGroup = 6003F581195388D10070C39A;
-			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			mainGroup = C2318F94206245E800EF0C07;
+			productRefGroup = C2318F9E206245E800EF0C07 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6003F589195388D20070C39A /* JWWaveView_Example */,
-				6003F5AD195388D20070C39A /* JWWaveView_Tests */,
+				C2318F9C206245E800EF0C07 /* JWWaveView */,
+				C2318FB5206245E900EF0C07 /* JWWaveViewTests */,
+				C2318FC0206245E900EF0C07 /* JWWaveViewUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6003F588195388D20070C39A /* Resources */ = {
+		C2318F9B206245E800EF0C07 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
-				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				C2318FB0206245E800EF0C07 /* LaunchScreen.storyboard in Resources */,
+				C2318FEE206253B700EF0C07 /* JWWaveView-Info.plist in Resources */,
+				C2318FAD206245E800EF0C07 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6003F5AC195388D20070C39A /* Resources */ = {
+		C2318FB4206245E900EF0C07 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2318FBF206245E900EF0C07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		189F0183073D936F1F4A82B6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JWWaveView_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2F656E3AC9817B88FD42DE72 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWWaveView_Example/Pods-JWWaveView_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		31A4FAA891F55CF2675ED51A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-JWWaveView_Example/Pods-JWWaveView_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JWWaveView/JWWaveView.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWWaveView.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWWaveView_Example/Pods-JWWaveView_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		39F7E269F8394CA4F11E58B9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JWWaveView_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3D04A38D7E074931CA1DB892 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWWaveView_Tests/Pods-JWWaveView_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5E6C11F6E9BE7DD08772A746 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWWaveView_Tests/Pods-JWWaveView_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		6003F586195388D20070C39A /* Sources */ = {
+		C2318F99206245E800EF0C07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* JWAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* JWViewController.m in Sources */,
-				6003F59A195388D20070C39A /* main.m in Sources */,
+				C2318FEC206249EC00EF0C07 /* JWWaveInCellTestViewController.m in Sources */,
+				C2318FE2206248E500EF0C07 /* JWWaveView.m in Sources */,
+				C2318FA5206245E800EF0C07 /* JWAppDelegate.m in Sources */,
+				C2318FD6206247BD00EF0C07 /* JWMainTableViewController.m in Sources */,
+				C2318FA2206245E800EF0C07 /* main.m in Sources */,
+				C2318FEB206249EC00EF0C07 /* JWWaveTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6003F5AA195388D20070C39A /* Sources */ = {
+		C2318FB2206245E900EF0C07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				C2318FBB206245E900EF0C07 /* JWWaveViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2318FBD206245E900EF0C07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2318FC6206245E900EF0C07 /* JWWaveViewUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
+		C2318FB8206245E900EF0C07 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6003F589195388D20070C39A /* JWWaveView_Example */;
-			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+			target = C2318F9C206245E800EF0C07 /* JWWaveView */;
+			targetProxy = C2318FB7206245E900EF0C07 /* PBXContainerItemProxy */;
+		};
+		C2318FC3206245E900EF0C07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2318F9C206245E800EF0C07 /* JWWaveView */;
+			targetProxy = C2318FC2206245E900EF0C07 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+		C2318FAE206245E800EF0C07 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6003F597195388D20070C39A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F5B9195388D20070C39A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				71719F9E1E33DC2100824A3D /* Base */,
+				C2318FAF206245E800EF0C07 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -455,10 +366,12 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6003F5BD195388D20070C39A /* Debug */ = {
+		C2318FC8206245E900EF0C07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -466,39 +379,47 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		6003F5BE195388D20070C39A /* Release */ = {
+		C2318FC9206245E900EF0C07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -506,133 +427,151 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		6003F5C0195388D20070C39A /* Debug */ = {
+		C2318FCB206245E900EF0C07 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0885E07104E798384B8AAD61 /* Pods-JWWaveView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JWWaveView/JWWaveView-Prefix.pch";
-				INFOPLIST_FILE = "JWWaveView/JWWaveView-Info.plist";
-				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				DEVELOPMENT_TEAM = Y39R442P5T;
+				INFOPLIST_FILE = "$(SRCROOT)/JWWaveView/JWWaveView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangwang.JWWaveView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		6003F5C1195388D20070C39A /* Release */ = {
+		C2318FCC206245E900EF0C07 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2055CDAD1AD415C651B9B312 /* Pods-JWWaveView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JWWaveView/JWWaveView-Prefix.pch";
-				INFOPLIST_FILE = "JWWaveView/JWWaveView-Info.plist";
-				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				DEVELOPMENT_TEAM = Y39R442P5T;
+				INFOPLIST_FILE = "$(SRCROOT)/JWWaveView/JWWaveView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangwang.JWWaveView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		6003F5C3195388D20070C39A /* Debug */ = {
+		C2318FCE206245E900EF0C07 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 601BF25A74CCBC0B5E6E9A24 /* Pods-JWWaveView_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				DEVELOPMENT_TEAM = Y39R442P5T;
+				INFOPLIST_FILE = JWWaveViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangwang.JWWaveViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JWWaveView_Example.app/JWWaveView_Example";
-				WRAPPER_EXTENSION = xctest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JWWaveView.app/JWWaveView";
 			};
 			name = Debug;
 		};
-		6003F5C4195388D20070C39A /* Release */ = {
+		C2318FCF206245E900EF0C07 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61D9D5B2058CDD7179E1149E /* Pods-JWWaveView_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				DEVELOPMENT_TEAM = Y39R442P5T;
+				INFOPLIST_FILE = JWWaveViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangwang.JWWaveViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JWWaveView_Example.app/JWWaveView_Example";
-				WRAPPER_EXTENSION = xctest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JWWaveView.app/JWWaveView";
+			};
+			name = Release;
+		};
+		C2318FD1206245E900EF0C07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Y39R442P5T;
+				INFOPLIST_FILE = JWWaveViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangwang.JWWaveViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JWWaveView;
+			};
+			name = Debug;
+		};
+		C2318FD2206245E900EF0C07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Y39R442P5T;
+				INFOPLIST_FILE = JWWaveViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangwang.JWWaveViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JWWaveView;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "JWWaveView" */ = {
+		C2318F98206245E800EF0C07 /* Build configuration list for PBXProject "JWWaveView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6003F5BD195388D20070C39A /* Debug */,
-				6003F5BE195388D20070C39A /* Release */,
+				C2318FC8206245E900EF0C07 /* Debug */,
+				C2318FC9206245E900EF0C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "JWWaveView_Example" */ = {
+		C2318FCA206245E900EF0C07 /* Build configuration list for PBXNativeTarget "JWWaveView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6003F5C0195388D20070C39A /* Debug */,
-				6003F5C1195388D20070C39A /* Release */,
+				C2318FCB206245E900EF0C07 /* Debug */,
+				C2318FCC206245E900EF0C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "JWWaveView_Tests" */ = {
+		C2318FCD206245E900EF0C07 /* Build configuration list for PBXNativeTarget "JWWaveViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6003F5C3195388D20070C39A /* Debug */,
-				6003F5C4195388D20070C39A /* Release */,
+				C2318FCE206245E900EF0C07 /* Debug */,
+				C2318FCF206245E900EF0C07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2318FD0206245E900EF0C07 /* Build configuration list for PBXNativeTarget "JWWaveViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2318FD1206245E900EF0C07 /* Debug */,
+				C2318FD2206245E900EF0C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6003F582195388D10070C39A /* Project object */;
+	rootObject = C2318F95206245E800EF0C07 /* Project object */;
 }

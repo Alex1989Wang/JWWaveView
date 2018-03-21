@@ -1,5 +1,5 @@
 //
-//  JWAppDelegate.h
+//  JWMainTableViewController.h
 //  JWWaveView
 //
 //  Created by JiangWang on 21/03/2018.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JWAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface JWMainTableViewController : UITableViewController
 
 @end
-

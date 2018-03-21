@@ -1,0 +1,6 @@
+framework module JWWaveView {
+  umbrella header "JWWaveView-umbrella.h"
+
+  export *
+  module * { export * }
+}
