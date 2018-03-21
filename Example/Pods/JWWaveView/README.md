@@ -17,7 +17,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 <div align='center'>
 <img 
-src="https://github.com/Alex1989Wang/JWWaveView/blob/master/Example/JWWaveView/SceenShots/wave_effect_gif.gif" 
+src="Example/JWWaveView/SceenShots/wave_effect_gif.gif" 
 width="300" 
 title = "water-waving effect"
 alt = "water-waving effect"
