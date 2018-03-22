@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JWWaveView'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'Providing a water waving effect for any of your UIView instance.'
 
 # This description is used to generate tags and improve search results.
