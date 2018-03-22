@@ -9,27 +9,55 @@
 #import "JWMultiCylceWaveTestViewController.h"
 #import "JWWaveView.h"
 
+static NSInteger kLayoutPassNumber = 0;
+
 @interface JWMultiCylceWaveTestViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
+@property (weak, nonatomic) IBOutlet UIButton *pauseAnimationBtn;
 @property (nonatomic, strong) JWWaveView *waveView;
+@property (nonatomic, assign, getter=isAnimationPaused) BOOL animationPaused;
 @end
 
 @implementation JWMultiCylceWaveTestViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    kLayoutPassNumber = 0;
 }
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
     //start wave animation
-    CGRect avatarRect = self.avatarImageView.bounds;
-    CGRect waveRect = (CGRect){0, CGRectGetHeight(avatarRect) * 3/4,
-        CGRectGetWidth(avatarRect), CGRectGetHeight(avatarRect) * 1/4};
-    self.waveView.frame = waveRect;
-    [self.avatarImageView addSubview:self.waveView];
-    [self.waveView startWavingIfNeeded];
+    if (kLayoutPassNumber == 0) {
+        CGRect avatarRect = self.avatarImageView.bounds;
+        CGRect waveRect = (CGRect){0, CGRectGetHeight(avatarRect) * 3/4,
+            CGRectGetWidth(avatarRect), CGRectGetHeight(avatarRect) * 1/4};
+        self.waveView.frame = waveRect;
+        [self.avatarImageView addSubview:self.waveView];
+        [self.waveView startWavingIfNeeded];
+        self.animationPaused = NO;
+    }
+    
+    kLayoutPassNumber++;
+}
+
+- (IBAction)pauseOrUnpauseAnimation:(UIButton *)sender {
+    if (self.isAnimationPaused) {
+        [self.waveView startWavingIfNeeded];
+        self.animationPaused = NO;
+    }
+    else {
+        [self.waveView pauseWavingIfNeeded];
+        self.animationPaused = YES;
+    }
+}
+
+- (void)setAnimationPaused:(BOOL)animationPaused {
+    _animationPaused = animationPaused;
+    NSString *btnTitle = (animationPaused) ? @"Unpause Animation" :
+    @"Pause Animation";
+    [self.pauseAnimationBtn setTitle:btnTitle forState:UIControlStateNormal];
 }
 
 #pragma mark - Lazy Loading
@@ -39,6 +67,7 @@
         _waveView.waveColor =
         [UIColor colorWithRed:0 green:0 blue:0.5 alpha:1.0];
         _waveView.waveCycles = 2;
+        _waveView.waveDuration = 2;
     }
     return _waveView;
 }

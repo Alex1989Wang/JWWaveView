@@ -29,8 +29,25 @@
  random value y and ends at (y + 2 * M_PI). 
  
  The default value is 1.
+ 
+ Setting a value less than 1 has no effect. 
  */
 @property (nonatomic, assign) NSInteger waveCycles;
+
+/**
+ The waving animation duration. The value defines how long does it take to move
+ all current displayed waves off screen. 
+ 
+ @note The unit of this property is second.
+ 
+ If large waveCycles are used, normally, you also need a fairly large
+ waveDuration so that visually the waving speed is acceptable. 
+ 
+ The default value for this property is 1. 
+ 
+ Setting a value less than 0 has no effect. 
+ */
+@property (nonatomic, assign) CGFloat waveDuration;
 
 /**
  Start the water waving animation if all conditions are met.

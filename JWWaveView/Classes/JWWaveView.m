@@ -12,7 +12,6 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
 
 @interface JWWaveView ()
 @property (nonatomic, strong) CAShapeLayer *waveShapeLayer;
-@property (nonatomic, assign) CFTimeInterval timeOffset;
 @end
 
 @implementation JWWaveView
@@ -28,7 +27,6 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
     self.waveShapeLayer.frame = replicatorRect;
     CGFloat instanceWidth = CGRectGetWidth(replicatorRect);
     replicatorLayer.instanceTransform = CATransform3DMakeTranslation(instanceWidth, 0, 0);
-    replicatorLayer.instanceDelay = 0;
     
     //setup shape
     [self setupWavePath];
@@ -41,19 +39,7 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
     CFTimeInterval currentTime = CACurrentMediaTime();
     CFTimeInterval layerPausedTimestamp = [self.waveShapeLayer convertTime:currentTime toLayer:nil];
     self.waveShapeLayer.timeOffset = layerPausedTimestamp;
-    self.timeOffset = layerPausedTimestamp;
     self.waveShapeLayer.speed = 0;
-}
-
-- (void)setWaveColor:(UIColor *)waveColor {
-    self.waveShapeLayer.fillColor = waveColor.CGColor;
-    self.waveShapeLayer.strokeColor = waveColor.CGColor;
-}
-
-- (void)setWaveCycles:(NSInteger)waveCycles {
-    if (_waveCycles != waveCycles) {
-        _waveCycles = waveCycles;
-    }
 }
 
 #pragma mark - Initialization
@@ -78,6 +64,7 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
 - (void)configureIntialSetup {
     //do not allow shape layers to move outside of view's bounds rectangle.
     self.clipsToBounds = YES;
+    _waveDuration = 1.0;
     _waveColor = [UIColor blueColor];
     _waveCycles = 1;
 }
@@ -109,7 +96,7 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
         transAnim.fromValue = [NSNumber numberWithFloat:0];
         transAnim.toValue = [NSNumber numberWithFloat:(-1.0 * replicatorRect.size.width)];
         transAnim.repeatCount = CGFLOAT_MAX;
-        transAnim.duration = 1.0;
+        transAnim.duration = _waveDuration;
         transAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
         transAnim.removedOnCompletion = NO;
         transAnim.fillMode = kCAFillModeBoth;
@@ -117,26 +104,25 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
     }
     
     //if paused last time
-    self.waveShapeLayer.speed = 1.0;
-    self.waveShapeLayer.beginTime = 0;
-    CFTimeInterval currentTime = CACurrentMediaTime();
-    CFTimeInterval layerTimestamp = [self.waveShapeLayer convertTime:currentTime toLayer:nil];
-    CFTimeInterval timeOffsetSincePaused = layerTimestamp - self.waveShapeLayer.timeOffset;
-    self.waveShapeLayer.timeOffset = 0;
-    self.waveShapeLayer.beginTime = timeOffsetSincePaused;
+    CFTimeInterval previousTimeOffset = self.waveShapeLayer.timeOffset;
+    if (previousTimeOffset) {
+        self.waveShapeLayer.speed = 1.0;
+        self.waveShapeLayer.beginTime = 0;
+        self.waveShapeLayer.timeOffset = 0;
+        CFTimeInterval currentTime = CACurrentMediaTime();
+        CFTimeInterval layerTimestamp = [self.waveShapeLayer convertTime:currentTime toLayer:nil];
+        CFTimeInterval timeOffsetSincePaused = layerTimestamp - previousTimeOffset;
+        self.waveShapeLayer.beginTime = timeOffsetSincePaused;
+    }
 }
 
 - (void)configureWaveShapes {
     CAReplicatorLayer *replicatorLayer = [self replicatorLayer];
     
     //add two shape layers
-    CAShapeLayer *waveShapeLayer = [CAShapeLayer layer];
-    waveShapeLayer.strokeColor = [UIColor blueColor].CGColor;
-    waveShapeLayer.fillColor = [UIColor blueColor].CGColor;
-    self.waveShapeLayer = waveShapeLayer;
-    
-    [replicatorLayer addSublayer:waveShapeLayer];
+    [replicatorLayer addSublayer:self.waveShapeLayer];
     replicatorLayer.instanceCount = 2;
+    replicatorLayer.instanceDelay = 0;
 }
 
 - (void)setupWavePath {
@@ -172,6 +158,28 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
     [sinPath closePath];
     self.waveShapeLayer.path = sinPath.CGPath;
     [CATransaction commit];
+}
+
+#pragma mark - Accessors
+- (void)setWaveColor:(UIColor *)waveColor {
+    self.waveShapeLayer.fillColor = waveColor.CGColor;
+    self.waveShapeLayer.strokeColor = waveColor.CGColor;
+}
+
+- (void)setWaveCycles:(NSInteger)waveCycles {
+    if (_waveCycles != waveCycles) {
+        _waveCycles = MAX(1, waveCycles);
+    }
+}
+
+- (void)setWaveDuration:(CGFloat)waveDuration {
+    if (waveDuration < 0) {
+        return;
+    }
+    
+    if (_waveDuration != waveDuration) {
+        _waveDuration = waveDuration;
+    }
 }
 
 #pragma mark - Lazy Loading 
