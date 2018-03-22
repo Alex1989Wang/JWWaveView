@@ -36,10 +36,12 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
 }
 
 - (void)pauseWavingIfNeeded {
-    CFTimeInterval currentTime = CACurrentMediaTime();
-    CFTimeInterval layerPausedTimestamp = [self.waveShapeLayer convertTime:currentTime toLayer:nil];
-    self.waveShapeLayer.timeOffset = layerPausedTimestamp;
-    self.waveShapeLayer.speed = 0;
+    if ([self.waveShapeLayer animationForKey:kWaveShapeTranslationAnimationKey]) {
+        CFTimeInterval currentTime = CACurrentMediaTime();
+        CFTimeInterval layerPausedTimestamp = [self.waveShapeLayer convertTime:currentTime fromLayer:nil];
+        self.waveShapeLayer.speed = 0;
+        self.waveShapeLayer.timeOffset = layerPausedTimestamp;
+    }
 }
 
 #pragma mark - Initialization
@@ -110,7 +112,7 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
         self.waveShapeLayer.beginTime = 0;
         self.waveShapeLayer.timeOffset = 0;
         CFTimeInterval currentTime = CACurrentMediaTime();
-        CFTimeInterval layerTimestamp = [self.waveShapeLayer convertTime:currentTime toLayer:nil];
+        CFTimeInterval layerTimestamp = [self.waveShapeLayer convertTime:currentTime fromLayer:nil];
         CFTimeInterval timeOffsetSincePaused = layerTimestamp - previousTimeOffset;
         self.waveShapeLayer.beginTime = timeOffsetSincePaused;
     }
