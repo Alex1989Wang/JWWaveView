@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/JWWaveView.svg?style=flat)](http://cocoapods.org/pods/JWWaveView)
 [![License](https://img.shields.io/cocoapods/l/JWWaveView.svg?style=flat)](http://cocoapods.org/pods/JWWaveView)
 [![Platform](https://img.shields.io/cocoapods/p/JWWaveView.svg?style=flat)](http://cocoapods.org/pods/JWWaveView)
+[![Translation](https://img.shields.io/badge/Translation:-Chinese-brightgreen.svg)](https://github.com/Alex1989Wang/JWWaveView/blob/master/README_CN.md)
 
 JWWaveView provides a convenient way to add water-waving effect to any of your UIView instance. 
 
@@ -19,15 +20,42 @@ Some comparisons and measurements carried out between timer-driven waving animat
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+Pause and unpause wave view:
+
 <div align='center'>
 <img 
-src="https://github.com/Alex1989Wang/JWWaveView/blob/master/Example/JWWaveView/SceenShots/wave_effect_gif.gif" 
-width="300" 
+src="https://raw.githubusercontent.com/Alex1989Wang/JWWaveView/master/Example/JWWaveView/SceenShots/wave_effect_pause.gif" 
+width="350" 
+title = "water-waving effect pause and unpause"
+alt = "water-waving effect pause and unpause"
+align = center
+/>
+</div>
+
+Adding wave view to table view cells:
+
+<div align='center'>
+<img 
+src="https://raw.githubusercontent.com/Alex1989Wang/JWWaveView/master/Example/JWWaveView/SceenShots/wave_effect_gif.gif" 
+width="350" 
 title = "water-waving effect"
 alt = "water-waving effect"
 align = center
 />
 </div>
+
+## Features
+
+### Done 
+
+- [x] multiple cycles of waves are supported
+- [x] pause and unpause wave animation 
+
+### To do 
+
+- [ ] start with user-specified wave phase
+- [ ] two waves overlapping to provide depth
+- [ ] convenient category should be added 
 
 ## Installation with CocoaPods
 
