@@ -12,6 +12,7 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
 
 @interface JWWaveView ()
 @property (nonatomic, strong) CAShapeLayer *waveShapeLayer;
+@property (nonatomic, assign) BOOL shouldRestart; //if animation was started once; set this flat to YES;
 @end
 
 @implementation JWWaveView
@@ -20,19 +21,14 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
 - (void)startWavingIfNeeded {
     CAReplicatorLayer *replicatorLayer = [self replicatorLayer];
     CGRect replicatorRect = replicatorLayer.bounds;
-    if (CGRectIsEmpty(replicatorRect)) {
-        return;
-    }
-    
     self.waveShapeLayer.frame = replicatorRect;
-    CGFloat instanceWidth = CGRectGetWidth(replicatorRect);
-    replicatorLayer.instanceTransform = CATransform3DMakeTranslation(instanceWidth, 0, 0);
     
     //setup shape
-    [self setupWavePath];
-    
+    [self renewWavePathWithForceRenew:NO animated:NO];
+
     //restart animtion
     [self restartWaveShapeTranslation];
+    _shouldRestart = YES;
 }
 
 - (void)pauseWavingIfNeeded {
@@ -81,19 +77,36 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
 }
 
 - (void)willMoveToSuperview:(UIView *)newSuperview {
+    [super willMoveToSuperview:newSuperview];
     if (!newSuperview) {
         [self pauseWavingIfNeeded];
     }
     else {
-        [self restartWaveShapeTranslation];
+        //has started before by calling the public api
+        if (self.shouldRestart) {
+            [self restartWaveShapeTranslation];
+        }
     }
-    [super willMoveToSuperview:newSuperview];
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    CAReplicatorLayer *replicatorLayer = [self replicatorLayer];
+    CGRect replicatorRect = replicatorLayer.bounds;
+    self.waveShapeLayer.frame = replicatorRect;
 }
 
 #pragma mark - Private
 - (void)restartWaveShapeTranslation {
+    //layer setup
     CAReplicatorLayer *replicatorLayer = [self replicatorLayer];
     CGRect replicatorRect = replicatorLayer.bounds;
+    CGFloat instanceWidth = CGRectGetWidth(replicatorRect);
+    replicatorLayer.instanceTransform = CATransform3DMakeTranslation(instanceWidth, 0, 0);
+    if (CGRectIsEmpty(replicatorRect)) {
+        return;
+    }
+    
     if (![self.waveShapeLayer animationForKey:kWaveShapeTranslationAnimationKey]) {
         //add translation animation to shape layer;
         CABasicAnimation *transAnim = [CABasicAnimation animation];
@@ -125,44 +138,49 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
     CAReplicatorLayer *replicatorLayer = [self replicatorLayer];
     
     //add two shape layers
+    CGRect replicatorRect = replicatorLayer.bounds;
+    self.waveShapeLayer.frame = replicatorRect;
     [replicatorLayer addSublayer:self.waveShapeLayer];
     replicatorLayer.instanceCount = 2;
     replicatorLayer.instanceDelay = 0;
 }
 
-- (void)setupWavePath {
+- (void)renewWavePathWithForceRenew:(BOOL)forceRenew animated:(BOOL)animated {
     CGRect sinPathCanvasRect = self.waveShapeLayer.bounds;
     sinPathCanvasRect = CGRectIntegral(sinPathCanvasRect);
     if (CGRectIsEmpty(sinPathCanvasRect)) {
         return;
     }
     
-    [CATransaction begin];
-    [CATransaction setDisableActions:YES];
-    CGFloat canvasWidth = sinPathCanvasRect.size.width;
-    CGFloat canvasHeight = sinPathCanvasRect.size.height;
-    CGFloat canvasMidY = CGRectGetMidY(sinPathCanvasRect);
-    UIBezierPath *sinPath = [UIBezierPath bezierPath];
-    sinPath.lineWidth = 1.f;
-    CGFloat yPos = 0;
-    for (CGFloat xPos = 0.f; xPos <= canvasWidth; xPos += 1.f) {
-        //wave path starts at the canvasMidY and uses (canvasHeight * 0.5) as amplitude
-        CGFloat halfAmplitude = canvasHeight / 4.f;
-        yPos = canvasMidY + sin((xPos)/canvasWidth * M_PI * 2 * _waveCycles) * halfAmplitude;
-        if (fpclassify(xPos) == FP_ZERO) {
-            [sinPath moveToPoint:(CGPoint){xPos, yPos}];
+    //use default implicit animation
+    if (!self.waveShapeLayer.path || forceRenew) {
+        [CATransaction begin];
+        [CATransaction setDisableActions:!animated];
+        CGFloat canvasWidth = sinPathCanvasRect.size.width;
+        CGFloat canvasHeight = sinPathCanvasRect.size.height;
+        CGFloat canvasMidY = CGRectGetMidY(sinPathCanvasRect);
+        UIBezierPath *sinPath = [UIBezierPath bezierPath];
+        sinPath.lineWidth = 1.f;
+        CGFloat yPos = 0;
+        for (CGFloat xPos = 0.f; xPos <= canvasWidth; xPos += 1.f) {
+            //wave path starts at the canvasMidY and uses (canvasHeight * 0.5) as amplitude
+            CGFloat halfAmplitude = canvasHeight / 4.f;
+            yPos = canvasMidY + sin((xPos)/canvasWidth * M_PI * 2 * _waveCycles) * halfAmplitude;
+            if (fpclassify(xPos) == FP_ZERO) {
+                [sinPath moveToPoint:(CGPoint){xPos, yPos}];
+            }
+            else {
+                [sinPath addLineToPoint:(CGPoint){xPos, yPos}];
+            }
         }
-        else {
-            [sinPath addLineToPoint:(CGPoint){xPos, yPos}];
-        }
+        
+        //close path
+        [sinPath addLineToPoint:(CGPoint){canvasWidth, canvasHeight}];
+        [sinPath addLineToPoint:(CGPoint){0, canvasHeight}];
+        [sinPath closePath];
+        self.waveShapeLayer.path = sinPath.CGPath;
+        [CATransaction commit];
     }
-    
-    //close path
-    [sinPath addLineToPoint:(CGPoint){canvasWidth, canvasHeight}];
-    [sinPath addLineToPoint:(CGPoint){0, canvasHeight}];
-    [sinPath closePath];
-    self.waveShapeLayer.path = sinPath.CGPath;
-    [CATransaction commit];
 }
 
 #pragma mark - Accessors
@@ -173,7 +191,11 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
 
 - (void)setWaveCycles:(NSInteger)waveCycles {
     if (_waveCycles != waveCycles) {
-        _waveCycles = MAX(1, waveCycles);
+        NSInteger adjustedCycles = MAX(1, waveCycles);
+        if (adjustedCycles != _waveCycles) {
+            _waveCycles = adjustedCycles;
+            [self renewWavePathWithForceRenew:YES animated:YES];
+        }
     }
 }
 

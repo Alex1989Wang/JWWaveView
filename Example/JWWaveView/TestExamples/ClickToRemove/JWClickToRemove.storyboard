@@ -39,13 +39,22 @@
                                     <action selector="clickToRemoveWaveView:" destination="4UP-kR-Cxk" eventType="touchUpInside" id="sGm-Hv-uba"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMd-38-N5B">
+                                <rect key="frame" x="104.5" y="494" width="111" height="30"/>
+                                <state key="normal" title="Add Wave Cycle"/>
+                                <connections>
+                                    <action selector="clickToAddWaveCycle:" destination="4UP-kR-Cxk" eventType="touchUpInside" id="v2S-U9-VeU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="DH6-gF-Yr9" firstAttribute="centerY" secondItem="leL-7A-GzG" secondAttribute="centerY" id="7i0-Hq-uAu"/>
                             <constraint firstItem="c8C-kS-923" firstAttribute="top" secondItem="DH6-gF-Yr9" secondAttribute="bottom" constant="80" id="O8c-Mw-Wke"/>
                             <constraint firstItem="c8C-kS-923" firstAttribute="centerX" secondItem="leL-7A-GzG" secondAttribute="centerX" id="RdF-tb-3mh"/>
+                            <constraint firstItem="IMd-38-N5B" firstAttribute="centerX" secondItem="leL-7A-GzG" secondAttribute="centerX" id="lba-j1-upT"/>
                             <constraint firstItem="DH6-gF-Yr9" firstAttribute="centerX" secondItem="leL-7A-GzG" secondAttribute="centerX" id="nIO-a9-gyL"/>
+                            <constraint firstItem="IMd-38-N5B" firstAttribute="top" secondItem="c8C-kS-923" secondAttribute="bottom" constant="30" id="rhS-0I-Tjv"/>
                         </constraints>
                     </view>
                     <connections>

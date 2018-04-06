@@ -54,6 +54,12 @@ static NSInteger kLayoutPassNumber = 0;
     }
 }
 
+- (IBAction)clickToAddWaveCycle:(UIButton *)sender {
+    NSInteger currentCycle = self.waveView.waveCycles;
+    currentCycle++;
+    self.waveView.waveCycles = currentCycle;
+}
+
 - (void)setAnimationPaused:(BOOL)animationPaused {
     _animationPaused = animationPaused;
 }
