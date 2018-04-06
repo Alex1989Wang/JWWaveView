@@ -68,6 +68,7 @@ static NSInteger kLayoutPassNumber = 0;
         [UIColor colorWithRed:0 green:0 blue:0.5 alpha:1.0];
         _waveView.waveCycles = 2;
         _waveView.waveDuration = 2;
+        _waveView.waveShift = 1.5 * M_PI;
     }
     return _waveView;
 }

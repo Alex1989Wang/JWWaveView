@@ -19,10 +19,9 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
 
 #pragma mark - Public
 - (void)startWavingIfNeeded {
-    CAReplicatorLayer *replicatorLayer = [self replicatorLayer];
-    CGRect replicatorRect = replicatorLayer.bounds;
-    self.waveShapeLayer.frame = replicatorRect;
-    
+    //force layout sublayers if layouts are pending
+    [self layoutIfNeeded];
+
     //setup shape
     [self renewWavePathWithForceRenew:NO animated:NO];
 
@@ -65,6 +64,7 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
     _waveDuration = 1.0;
     _waveColor = [UIColor blueColor];
     _waveCycles = 1;
+    _waveShift = 0;
 }
 
 #pragma mark - Override
@@ -165,7 +165,7 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
         for (CGFloat xPos = 0.f; xPos <= canvasWidth; xPos += 1.f) {
             //wave path starts at the canvasMidY and uses (canvasHeight * 0.5) as amplitude
             CGFloat halfAmplitude = canvasHeight / 4.f;
-            yPos = canvasMidY + sin((xPos)/canvasWidth * M_PI * 2 * _waveCycles) * halfAmplitude;
+            yPos = canvasMidY + sin((xPos/canvasWidth) * M_PI * 2 * _waveCycles + _waveShift) * halfAmplitude;
             if (fpclassify(xPos) == FP_ZERO) {
                 [sinPath moveToPoint:(CGPoint){xPos, yPos}];
             }
@@ -207,6 +207,13 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
     if (_waveDuration != waveDuration) {
         _waveDuration = waveDuration;
     }
+}
+
+- (void)setWaveShift:(CGFloat)waveShift {
+    if (waveShift < 0 || waveShift > 2 * M_PI) {
+        return;
+    }
+    _waveShift = waveShift;
 }
 
 #pragma mark - Lazy Loading 

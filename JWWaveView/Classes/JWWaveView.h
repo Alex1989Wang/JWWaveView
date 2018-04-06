@@ -50,6 +50,18 @@
 @property (nonatomic, assign) CGFloat waveDuration;
 
 /**
+ The wave path is modeled using the mathmatical sin(x) function. The default value
+ for x starts at 0, which yeilds an amplitude of 0.
+ This propery adds a shift to the x value.
+ 
+ The effective range for this property is [0, 2 * M_PI]. The default value is 0,
+ which means no shift is added to the wave.
+ 
+ @note changing this value after animation has no effect.
+ */
+@property (nonatomic, assign) CGFloat waveShift;
+
+/**
  Start the water waving animation if all conditions are met.
  */
 - (void)startWavingIfNeeded;
