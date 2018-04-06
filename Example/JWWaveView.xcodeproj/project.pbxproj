@@ -21,6 +21,8 @@
 		C2318FEE206253B700EF0C07 /* JWWaveView-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2318FED206253B700EF0C07 /* JWWaveView-Info.plist */; };
 		C2318FF02062998E00EF0C07 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2318FEF2062998E00EF0C07 /* Storyboard.storyboard */; };
 		C2E4DD55206299340018B969 /* JWMultiCylceWaveTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E4DD54206299340018B969 /* JWMultiCylceWaveTestViewController.m */; };
+		EE5E65A8207712BB009C8553 /* JWClickToRemoveWaveViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E65A5207712BB009C8553 /* JWClickToRemoveWaveViewTestController.m */; };
+		EE5E65A9207712BB009C8553 /* JWClickToRemove.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE5E65A6207712BB009C8553 /* JWClickToRemove.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,9 @@
 		C2E4DD54206299340018B969 /* JWMultiCylceWaveTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWMultiCylceWaveTestViewController.m; sourceTree = "<group>"; };
 		C67C40C6D025599D9CA2ADE1 /* Pods-JWWaveView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWWaveView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWWaveView/Pods-JWWaveView.debug.xcconfig"; sourceTree = "<group>"; };
 		E25F12FA8F3954C416AC3CFC /* Pods_JWWaveViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWWaveViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE5E65A5207712BB009C8553 /* JWClickToRemoveWaveViewTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWClickToRemoveWaveViewTestController.m; sourceTree = "<group>"; };
+		EE5E65A6207712BB009C8553 /* JWClickToRemove.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JWClickToRemove.storyboard; sourceTree = "<group>"; };
+		EE5E65A7207712BB009C8553 /* JWClickToRemoveWaveViewTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWClickToRemoveWaveViewTestController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +183,7 @@
 				C2318FD5206247BD00EF0C07 /* JWMainTableViewController.m */,
 				C2318FE6206249EC00EF0C07 /* WaveViewInCells */,
 				C2E4DD52206299180018B969 /* MultiCycles */,
+				EE5E65A4207712BB009C8553 /* ClickToRemove */,
 			);
 			path = TestExamples;
 			sourceTree = "<group>";
@@ -210,6 +216,16 @@
 				E25F12FA8F3954C416AC3CFC /* Pods_JWWaveViewTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE5E65A4207712BB009C8553 /* ClickToRemove */ = {
+			isa = PBXGroup;
+			children = (
+				EE5E65A5207712BB009C8553 /* JWClickToRemoveWaveViewTestController.m */,
+				EE5E65A6207712BB009C8553 /* JWClickToRemove.storyboard */,
+				EE5E65A7207712BB009C8553 /* JWClickToRemoveWaveViewTestController.h */,
+			);
+			path = ClickToRemove;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +348,7 @@
 				C2318FF02062998E00EF0C07 /* Storyboard.storyboard in Resources */,
 				C2318FEE206253B700EF0C07 /* JWWaveView-Info.plist in Resources */,
 				C2318FAD206245E800EF0C07 /* Assets.xcassets in Resources */,
+				EE5E65A9207712BB009C8553 /* JWClickToRemove.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +480,7 @@
 				C2318FA5206245E800EF0C07 /* JWAppDelegate.m in Sources */,
 				C2318FD6206247BD00EF0C07 /* JWMainTableViewController.m in Sources */,
 				C2318FA2206245E800EF0C07 /* main.m in Sources */,
+				EE5E65A8207712BB009C8553 /* JWClickToRemoveWaveViewTestController.m in Sources */,
 				C2318FEB206249EC00EF0C07 /* JWWaveTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -84,6 +84,9 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
     if (!newSuperview) {
         [self pauseWavingIfNeeded];
     }
+    else {
+        [self restartWaveShapeTranslation];
+    }
     [super willMoveToSuperview:newSuperview];
 }
 

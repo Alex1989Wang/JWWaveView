@@ -9,10 +9,12 @@
 #import "JWMainTableViewController.h"
 #import "JWWaveInCellTestViewController.h"
 #import "JWMultiCylceWaveTestViewController.h"
+#import "JWClickToRemoveWaveViewTestController.h"
 
 typedef NS_ENUM(NSUInteger, JWWaveViewTestType) {
     JWWaveViewTestTypeMultiCycle,
     JWWaveViewTestTypeInCell,
+    JWWaveViewTestTypeClickToRemove,
 };
 
 static NSString *JWMainTableViewCellReuseID = @"JWMainTableViewCellReuseID";
@@ -76,6 +78,15 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
             [self.navigationController pushViewController:testCon animated:YES];
             break;
         }
+        case JWWaveViewTestTypeClickToRemove: {
+            //test view removed by pushing in another view controller
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"JWClickToRemove" bundle:nil];
+            JWMultiCylceWaveTestViewController *testCon =
+            [storyboard instantiateViewControllerWithIdentifier:@"JWClickToRemoveWaveViewTestController"];
+            testCon.title = self.testTypesMap[@(indexPath.row)];
+            [self.navigationController pushViewController:testCon animated:YES];
+            break;
+        }
         default:
             break;
     }
@@ -85,7 +96,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 - (NSDictionary *)testTypesMap {
     if (nil == _testTypesMap) {
         _testTypesMap = @{@(JWWaveViewTestTypeInCell) : @"Wave View In Table Cells",
-                          @(JWWaveViewTestTypeMultiCycle) : @"Multiple Wave Cycles",};
+                          @(JWWaveViewTestTypeMultiCycle) : @"Multiple Wave Cycles",
+                          @(JWWaveViewTestTypeClickToRemove) : @"Click To Remove",};
     }
     return _testTypesMap;
 }

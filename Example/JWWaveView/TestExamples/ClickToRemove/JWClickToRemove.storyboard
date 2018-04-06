@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Click To Remove Wave View Test Controller-->
+        <scene sceneID="gSZ-Vg-eUv">
+            <objects>
+                <viewController storyboardIdentifier="JWClickToRemoveWaveViewTestController" id="4UP-kR-Cxk" customClass="JWClickToRemoveWaveViewTestController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iA8-gi-pzU"/>
+                        <viewControllerLayoutGuide type="bottom" id="6GS-gb-Jl2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="leL-7A-GzG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bear60pt" translatesAutoresizingMaskIntoConstraints="NO" id="DH6-gF-Yr9">
+                                <rect key="frame" x="100" y="224" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="EcI-sp-xsv"/>
+                                    <constraint firstAttribute="width" constant="120" id="Ujj-ln-8U4"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8C-kS-923">
+                                <rect key="frame" x="80" y="424" width="160" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="On0-f3-OUM"/>
+                                    <constraint firstAttribute="height" constant="40" id="ZcY-1r-nJ1"/>
+                                </constraints>
+                                <state key="normal" title="Click To Remove"/>
+                                <connections>
+                                    <action selector="clickToRemoveWaveView:" destination="4UP-kR-Cxk" eventType="touchUpInside" id="sGm-Hv-uba"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DH6-gF-Yr9" firstAttribute="centerY" secondItem="leL-7A-GzG" secondAttribute="centerY" id="7i0-Hq-uAu"/>
+                            <constraint firstItem="c8C-kS-923" firstAttribute="top" secondItem="DH6-gF-Yr9" secondAttribute="bottom" constant="80" id="O8c-Mw-Wke"/>
+                            <constraint firstItem="c8C-kS-923" firstAttribute="centerX" secondItem="leL-7A-GzG" secondAttribute="centerX" id="RdF-tb-3mh"/>
+                            <constraint firstItem="DH6-gF-Yr9" firstAttribute="centerX" secondItem="leL-7A-GzG" secondAttribute="centerX" id="nIO-a9-gyL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="DH6-gF-Yr9" id="bXD-5w-Um2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="39c-VY-0wI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3807.1999999999998" y="957.57121439280365"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bear60pt" width="60" height="60"/>
+    </resources>
+</document>
