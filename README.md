@@ -50,10 +50,10 @@ align = center
 
 - [x] multiple cycles of waves are supported
 - [x] pause and unpause wave animation 
+- [x] start with user-specified wave phase shift
 
 ### To do 
 
-- [ ] start with user-specified wave phase
 - [ ] two waves overlapping to provide depth
 - [ ] convenient category should be added 
 
