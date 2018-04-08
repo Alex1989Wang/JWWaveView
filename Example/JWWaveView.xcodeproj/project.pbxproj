@@ -13,8 +13,6 @@
 		C2318FA5206245E800EF0C07 /* JWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FA4206245E800EF0C07 /* JWAppDelegate.m */; };
 		C2318FAD206245E800EF0C07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2318FAC206245E800EF0C07 /* Assets.xcassets */; };
 		C2318FB0206245E800EF0C07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2318FAE206245E800EF0C07 /* LaunchScreen.storyboard */; };
-		C2318FBB206245E900EF0C07 /* JWWaveViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FBA206245E900EF0C07 /* JWWaveViewTests.m */; };
-		C2318FC6206245E900EF0C07 /* JWWaveViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FC5206245E900EF0C07 /* JWWaveViewUITests.m */; };
 		C2318FD6206247BD00EF0C07 /* JWMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FD5206247BD00EF0C07 /* JWMainTableViewController.m */; };
 		C2318FEB206249EC00EF0C07 /* JWWaveTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FE7206249EC00EF0C07 /* JWWaveTableCell.m */; };
 		C2318FEC206249EC00EF0C07 /* JWWaveInCellTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2318FE8206249EC00EF0C07 /* JWWaveInCellTestViewController.m */; };
@@ -23,6 +21,10 @@
 		C2E4DD55206299340018B969 /* JWMultiCylceWaveTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E4DD54206299340018B969 /* JWMultiCylceWaveTestViewController.m */; };
 		EE5E65A8207712BB009C8553 /* JWClickToRemoveWaveViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E65A5207712BB009C8553 /* JWClickToRemoveWaveViewTestController.m */; };
 		EE5E65A9207712BB009C8553 /* JWClickToRemove.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE5E65A6207712BB009C8553 /* JWClickToRemove.storyboard */; };
+		EE5E65C22079B8B1009C8553 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE5E65BE2079B8B1009C8553 /* Info.plist */; };
+		EE5E65C32079B8B1009C8553 /* JWWaveViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E65BF2079B8B1009C8553 /* JWWaveViewTests.m */; };
+		EE5E65C42079B8BA009C8553 /* JWWaveViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E65BB2079B8B0009C8553 /* JWWaveViewUITests.m */; };
+		EE5E65C52079B8BD009C8553 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE5E65BC2079B8B0009C8553 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +56,7 @@
 		C2318FAC206245E800EF0C07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2318FAF206245E800EF0C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2318FB6206245E900EF0C07 /* JWWaveViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JWWaveViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2318FBA206245E900EF0C07 /* JWWaveViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWWaveViewTests.m; sourceTree = "<group>"; };
-		C2318FBC206245E900EF0C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2318FC1206245E900EF0C07 /* JWWaveViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JWWaveViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2318FC5206245E900EF0C07 /* JWWaveViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWWaveViewUITests.m; sourceTree = "<group>"; };
-		C2318FC7206245E900EF0C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2318FD4206247BD00EF0C07 /* JWMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWMainTableViewController.h; sourceTree = "<group>"; };
 		C2318FD5206247BD00EF0C07 /* JWMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWMainTableViewController.m; sourceTree = "<group>"; };
 		C2318FE7206249EC00EF0C07 /* JWWaveTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWWaveTableCell.m; sourceTree = "<group>"; };
@@ -74,6 +72,10 @@
 		EE5E65A5207712BB009C8553 /* JWClickToRemoveWaveViewTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWClickToRemoveWaveViewTestController.m; sourceTree = "<group>"; };
 		EE5E65A6207712BB009C8553 /* JWClickToRemove.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JWClickToRemove.storyboard; sourceTree = "<group>"; };
 		EE5E65A7207712BB009C8553 /* JWClickToRemoveWaveViewTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWClickToRemoveWaveViewTestController.h; sourceTree = "<group>"; };
+		EE5E65BB2079B8B0009C8553 /* JWWaveViewUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWWaveViewUITests.m; sourceTree = "<group>"; };
+		EE5E65BC2079B8B0009C8553 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE5E65BE2079B8B1009C8553 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE5E65BF2079B8B1009C8553 /* JWWaveViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWWaveViewTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				C2318F9F206245E800EF0C07 /* JWWaveView */,
-				C2318FB9206245E900EF0C07 /* JWWaveViewTests */,
-				C2318FC4206245E900EF0C07 /* JWWaveViewUITests */,
+				EE5E65BD2079B8B1009C8553 /* JWWaveViewTests */,
+				EE5E65BA2079B8B0009C8553 /* JWWaveViewUITests */,
 				C2318F9E206245E800EF0C07 /* Products */,
 				B463296925E39A70DD53602D /* Pods */,
 				C6F4CCDF65D541ABE241B75B /* Frameworks */,
@@ -156,24 +158,6 @@
 				C2318FA1206245E800EF0C07 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C2318FB9206245E900EF0C07 /* JWWaveViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				C2318FBA206245E900EF0C07 /* JWWaveViewTests.m */,
-				C2318FBC206245E900EF0C07 /* Info.plist */,
-			);
-			path = JWWaveViewTests;
-			sourceTree = "<group>";
-		};
-		C2318FC4206245E900EF0C07 /* JWWaveViewUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C2318FC5206245E900EF0C07 /* JWWaveViewUITests.m */,
-				C2318FC7206245E900EF0C07 /* Info.plist */,
-			);
-			path = JWWaveViewUITests;
 			sourceTree = "<group>";
 		};
 		C2318FD32062479E00EF0C07 /* TestExamples */ = {
@@ -226,6 +210,24 @@
 				EE5E65A7207712BB009C8553 /* JWClickToRemoveWaveViewTestController.h */,
 			);
 			path = ClickToRemove;
+			sourceTree = "<group>";
+		};
+		EE5E65BA2079B8B0009C8553 /* JWWaveViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE5E65BB2079B8B0009C8553 /* JWWaveViewUITests.m */,
+				EE5E65BC2079B8B0009C8553 /* Info.plist */,
+			);
+			path = JWWaveViewUITests;
+			sourceTree = "<group>";
+		};
+		EE5E65BD2079B8B1009C8553 /* JWWaveViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE5E65BE2079B8B1009C8553 /* Info.plist */,
+				EE5E65BF2079B8B1009C8553 /* JWWaveViewTests.m */,
+			);
+			path = JWWaveViewTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +304,7 @@
 				TargetAttributes = {
 					C2318F9C206245E800EF0C07 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = Y39R442P5T;
+						DevelopmentTeam = J58RDDKVF7;
 						ProvisioningStyle = Automatic;
 					};
 					C2318FB5206245E900EF0C07 = {
@@ -356,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5E65C22079B8B1009C8553 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5E65C52079B8BD009C8553 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,7 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2318FBB206245E900EF0C07 /* JWWaveViewTests.m in Sources */,
+				EE5E65C32079B8B1009C8553 /* JWWaveViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,7 +501,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2318FC6206245E900EF0C07 /* JWWaveViewUITests.m in Sources */,
+				EE5E65C42079B8BA009C8553 /* JWWaveViewUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,7 +627,7 @@
 			baseConfigurationReference = C67C40C6D025599D9CA2ADE1 /* Pods-JWWaveView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y39R442P5T;
+				DEVELOPMENT_TEAM = J58RDDKVF7;
 				INFOPLIST_FILE = "$(SRCROOT)/JWWaveView/JWWaveView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -637,7 +641,7 @@
 			baseConfigurationReference = 0EDAEA0B604E65AD5F31A54A /* Pods-JWWaveView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y39R442P5T;
+				DEVELOPMENT_TEAM = J58RDDKVF7;
 				INFOPLIST_FILE = "$(SRCROOT)/JWWaveView/JWWaveView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

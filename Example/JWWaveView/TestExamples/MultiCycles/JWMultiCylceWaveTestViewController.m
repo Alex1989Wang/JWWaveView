@@ -28,7 +28,7 @@ static NSInteger kLayoutPassNumber = 0;
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
-    //start wave animation
+    //start wave animation after avatarImageView has been laid out.
     if (kLayoutPassNumber == 0) {
         CGRect avatarRect = self.avatarImageView.bounds;
         CGRect waveRect = (CGRect){0, CGRectGetHeight(avatarRect) * 3/4,
