@@ -28,14 +28,21 @@
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testExample {
-    // Use recording to get started writing UI tests.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-    XCTAssert(YES);
+- (void)testAnimationPauseUnpause {
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app.tables/*@START_MENU_TOKEN@*/.staticTexts[@"Multiple Wave Cycles"]/*[[".cells.staticTexts[@\"Multiple Wave Cycles\"]",".staticTexts[@\"Multiple Wave Cycles\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/ tap];
+    XCUIElement *pauseAnimationButton = [app descendantsMatchingType:XCUIElementTypeButton][@"Pause Animation"];
+    XCTAssertTrue([pauseAnimationButton label]);
+    XCTAssertTrue([pauseAnimationButton.label isEqualToString:@"Pause Animation"]);
+    [pauseAnimationButton tap];
+    XCTAssertFalse(pauseAnimationButton.exists);
+    XCUIElement *unpauseAnimationButton = app.buttons[@"Unpause Animation"];
+    XCTAssertTrue(unpauseAnimationButton.exists);
+    XCTAssertTrue([unpauseAnimationButton.label isEqualToString:@"Unpause Animation"]);
+    [unpauseAnimationButton tap];
 }
 
 @end
