@@ -11,8 +11,11 @@
 static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveTranslation";
 
 @interface JWWaveView ()
+<CAAnimationDelegate>
+
 @property (nonatomic, strong) CAShapeLayer *waveShapeLayer;
 @property (nonatomic, assign) BOOL shouldRestart; //if animation was started once; set this flat to YES;
+@property (nonatomic, assign, getter=isWaving) BOOL waving;
 @end
 
 @implementation JWWaveView
@@ -36,6 +39,7 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
         CFTimeInterval layerPausedTimestamp = [self.waveShapeLayer convertTime:currentTime fromLayer:nil];
         self.waveShapeLayer.speed = 0;
         self.waveShapeLayer.timeOffset = layerPausedTimestamp;
+        self.waving = NO; //animation not removed or finished; but it's not waving;
     }
 }
 
@@ -65,6 +69,8 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
     _waveColor = [UIColor blueColor];
     _waveCycles = 1;
     _waveShift = 0;
+    _shouldRestart = NO;
+    _waving = NO;
 }
 
 #pragma mark - Override
@@ -118,6 +124,7 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
         transAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
         transAnim.removedOnCompletion = NO;
         transAnim.fillMode = kCAFillModeBoth;
+        transAnim.delegate = self;
         [self.waveShapeLayer addAnimation:transAnim forKey:kWaveShapeTranslationAnimationKey];
     }
     
@@ -131,6 +138,7 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
         CFTimeInterval layerTimestamp = [self.waveShapeLayer convertTime:currentTime fromLayer:nil];
         CFTimeInterval timeOffsetSincePaused = layerTimestamp - previousTimeOffset;
         self.waveShapeLayer.beginTime = timeOffsetSincePaused;
+        self.waving = YES; //paused last time;
     }
 }
 
@@ -181,6 +189,15 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
         self.waveShapeLayer.path = sinPath.CGPath;
         [CATransaction commit];
     }
+}
+
+#pragma mark - CAAnimationDelegate
+- (void)animationDidStart:(CAAnimation *)anim {
+    self.waving = YES; //KVO compatible
+}
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+    self.waving = NO;
 }
 
 #pragma mark - Accessors

@@ -62,6 +62,12 @@
 @property (nonatomic, assign) CGFloat waveShift;
 
 /**
+ A state value showing whether the waving animation is excuting. Any party of interest
+ can KVO this value.
+ */
+@property (nonatomic, assign, readonly, getter=isWaving) BOOL waving;
+
+/**
  Start the water waving animation if all conditions are met.
  */
 - (void)startWavingIfNeeded;

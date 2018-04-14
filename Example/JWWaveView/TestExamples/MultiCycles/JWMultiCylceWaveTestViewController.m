@@ -9,20 +9,30 @@
 #import "JWMultiCylceWaveTestViewController.h"
 #import "JWWaveView.h"
 
+static void *kWaveViewWavingStateCTX = &kWaveViewWavingStateCTX;
+
 static NSInteger kLayoutPassNumber = 0;
 
 @interface JWMultiCylceWaveTestViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
 @property (weak, nonatomic) IBOutlet UIButton *pauseAnimationBtn;
 @property (nonatomic, strong) JWWaveView *waveView;
-@property (nonatomic, assign, getter=isAnimationPaused) BOOL animationPaused;
 @end
 
 @implementation JWMultiCylceWaveTestViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.waveView addObserver:self
+                    forKeyPath:@"waving"
+                       options:NSKeyValueObservingOptionNew |
+     NSKeyValueObservingOptionOld
+                       context:kWaveViewWavingStateCTX];
     kLayoutPassNumber = 0;
+}
+
+- (void)dealloc {
+    [self.waveView removeObserver:self forKeyPath:@"waving"]; //remove KVO
 }
 
 - (void)viewDidLayoutSubviews {
@@ -36,28 +46,39 @@ static NSInteger kLayoutPassNumber = 0;
         self.waveView.frame = waveRect;
         [self.avatarImageView addSubview:self.waveView];
         [self.waveView startWavingIfNeeded];
-        self.animationPaused = NO;
     }
     
     kLayoutPassNumber++;
 }
 
 - (IBAction)pauseOrUnpauseAnimation:(UIButton *)sender {
-    if (self.isAnimationPaused) {
+    if (!self.waveView.isWaving) {
         [self.waveView startWavingIfNeeded];
-        self.animationPaused = NO;
     }
     else {
         [self.waveView pauseWavingIfNeeded];
-        self.animationPaused = YES;
     }
 }
 
-- (void)setAnimationPaused:(BOOL)animationPaused {
-    _animationPaused = animationPaused;
-    NSString *btnTitle = (animationPaused) ? @"Unpause Animation" :
-    @"Pause Animation";
-    [self.pauseAnimationBtn setTitle:btnTitle forState:UIControlStateNormal];
+#pragma mark - KVO
+- (void)observeValueForKeyPath:(NSString *)keyPath
+                      ofObject:(id)object
+                        change:(NSDictionary<NSKeyValueChangeKey,id> *)change
+                       context:(void *)context {
+    if (context == kWaveViewWavingStateCTX) {
+        NSNumber *isWavingNew = change[NSKeyValueChangeNewKey];
+        if ([isWavingNew respondsToSelector:@selector(boolValue)]) {
+            NSString *btnTitle = (![isWavingNew boolValue]) ?
+            @"Unpause Animation" : @"Pause Animation";
+            [self.pauseAnimationBtn setTitle:btnTitle forState:UIControlStateNormal];
+        }
+    }
+    else {
+        [super observeValueForKeyPath:keyPath
+                             ofObject:object
+                               change:change
+                              context:context];
+    }
 }
 
 #pragma mark - Lazy Loading
