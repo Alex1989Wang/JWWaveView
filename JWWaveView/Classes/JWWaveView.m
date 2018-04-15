@@ -18,6 +18,23 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
 @property (nonatomic, assign, getter=isWaving) BOOL waving;
 @end
 
+#pragma mark - NSCoding
+static NSString *const kWaveColorEncodeKey = @"kWaveColorEncodeKey";
+static NSString *const kWaveCyclesEncodeKey = @"kWaveCyclesEncodeKey";
+static NSString *const kWaveDurationEncodeKey = @"kWaveDurationEncodeKey";
+static NSString *const kWaveShiftEncodeKey = @"kWaveShiftEncodeKey";
+
+@implementation JWWaveView (NSCoding)
+//encode
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:self.waveColor forKey:kWaveColorEncodeKey];
+    [aCoder encodeInteger:self.waveCycles forKey:kWaveCyclesEncodeKey];
+    [aCoder encodeDouble:self.waveDuration forKey:kWaveDurationEncodeKey];
+    [aCoder encodeDouble:self.waveShift forKey:kWaveShiftEncodeKey];
+}
+@end
+
+#pragma mark - Class Implementation
 @implementation JWWaveView
 
 #pragma mark - Public
@@ -47,7 +64,7 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self configureIntialSetup];
+        [self initialConfigWithDecoder:nil];
         [self configureWaveShapes];
     }
     return self;
@@ -56,21 +73,30 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        [self configureIntialSetup];
+        [self initialConfigWithDecoder:aDecoder];
         [self configureWaveShapes];
     }
     return self;
 }
 
-- (void)configureIntialSetup {
+- (void)initialConfigWithDecoder:(NSCoder *)aDecoder {
     //do not allow shape layers to move outside of view's bounds rectangle.
     self.clipsToBounds = YES;
-    _waveDuration = 1.0;
-    _waveColor = [UIColor blueColor];
-    _waveCycles = 1;
-    _waveShift = 0;
-    _shouldRestart = NO;
     _waving = NO;
+    _shouldRestart = NO;
+    if (!aDecoder) {
+        _waveDuration = 1.0;
+        _waveColor = [UIColor blueColor];
+        _waveCycles = 1;
+        _waveShift = 0;
+    }
+    else {
+        _waveColor =
+        [aDecoder decodeObjectForKey:kWaveColorEncodeKey] ?: [UIColor blueColor];
+        _waveCycles = [aDecoder decodeIntegerForKey:kWaveCyclesEncodeKey] ?: 1;
+        _waveDuration = [aDecoder decodeDoubleForKey:kWaveDurationEncodeKey] ?: 1.0;
+        _waveShift = [aDecoder decodeDoubleForKey:kWaveShiftEncodeKey] ?: 0;
+    }
 }
 
 #pragma mark - Override
@@ -244,3 +270,5 @@ static NSString *const kWaveShapeTranslationAnimationKey = @"jiangwang.com.waveT
 }
 
 @end
+
+

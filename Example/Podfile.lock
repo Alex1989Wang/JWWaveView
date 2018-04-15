@@ -1,5 +1,5 @@
 PODS:
-  - JWWaveView (0.2.2)
+  - JWWaveView (0.3.1)
 
 DEPENDENCIES:
   - JWWaveView (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  JWWaveView: a54d26028d5a4ae9fd5b454b4c606137fe88a954
+  JWWaveView: d1df23d90335fceb3d20d4df61c6e97b00dc53f1
 
-PODFILE CHECKSUM: d415b81b9a43a8203e38b9f2b70dad0e6618a72d
+PODFILE CHECKSUM: ce6b19b2800ef3b9d2f9c3966d8daf7ae717be65
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.3.0

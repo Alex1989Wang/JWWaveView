@@ -7,26 +7,40 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <JWWaveView/JWWaveView.h>
 
 @interface JWWaveViewTests : XCTestCase
-
+@property (nonatomic, strong) JWWaveView *testView;
 @end
 
 @implementation JWWaveViewTests
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    _testView = [[JWWaveView alloc] initWithFrame:(CGRect){10, 10, 10, 10}];
+    _testView.waveShift = M_PI;
+    _testView.waveDuration = 2.0;
+    _testView.waveCycles = 1;
+    _testView.waveColor = [UIColor yellowColor];
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
+    _testView = nil;
 }
 
-- (void)testExample {
-    //no unit tests are provided at present.
-    XCTAssert(YES);
+- (void)testViewCodingFunctionality {
+    //encoding
+    NSString *filePath = NSStringFromClass([JWWaveView class]);
+    NSString *docPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+    NSString *fullPath = [docPath stringByAppendingPathComponent:filePath];
+    BOOL archived = [NSKeyedArchiver archiveRootObject:self.testView toFile:fullPath];
+    XCTAssertTrue(archived);
+    
+    //decoding
+    JWWaveView *decodedView = [NSKeyedUnarchiver unarchiveObjectWithFile:fullPath];
+    XCTAssertTrue(decodedView.waveDuration == self.testView.waveDuration);
+    XCTAssertTrue(CGColorEqualToColor(decodedView.waveColor.CGColor, self.testView.waveColor.CGColor));
 }
 
 

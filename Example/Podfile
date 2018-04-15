@@ -9,6 +9,5 @@ target 'JWWaveView' do
   target 'JWWaveViewTests' do
     inherit! :search_paths
 
-    
   end
 end
