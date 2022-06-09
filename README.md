@@ -9,7 +9,7 @@ JWWaveView provides a convenient way to add water-waving effect to any of your U
 
 JWWaveView is made possible by using CAReplicatorLayer as its core. Comparing to using timer to update the wave path continuously to get the water-waving effect, it's more efficient. 
 
-Some comparisons and measurements carried out between timer-driven waving animation and CAReplicatorLayer-based animation are laid out in this [blog post](http://www.awsomejiang.com/2018/03/20/Highly-perfomant-Waving-Effect/).
+Some comparisons and measurements carried out between timer-driven waving animation and CAReplicatorLayer-based animation are laid out in this [blog post](http://awesomejiang.cn/english/2018/03/20/Highly-perfomant-Waving-Effect.html).
 
 ## Requirements
 

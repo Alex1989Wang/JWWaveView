@@ -8,7 +8,7 @@ JWWaveView提供了为你任何的UIView实例添加水波纹效果的简便接�
 
 JWWaveView的内部实现利用了CAReplicatorLayer。与使用timer来不断更新波纹path路劲获得水波纹的动画相比，使用CAReplicatorLayer是更高效的选择。
 
-对于这使用timer驱动和使用CAReplicatorLayer这两种方式的一些比较和测量在[这篇博客](http://www.awsomejiang.com/2018/03/20/Highly-perfomant-Waving-Effect/)中有一些提到。
+对于这使用timer驱动和使用CAReplicatorLayer这两种方式的一些比较和测量在[这篇博客](http://awesomejiang.cn/english/2018/03/20/Highly-perfomant-Waving-Effect.html)中有一些提到。
 
 ## Requirements
 
